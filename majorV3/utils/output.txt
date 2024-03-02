@@ -1,0 +1,2446 @@
+mensional table  where I have got 5  This is my x and this is my y  So  5
+corresponding to that 7 first row that is the first point  I could have taken 0 0 also that would be
+another one 
+
+So  10 corresponding to that 16 then 15 corresponding to that 18  So  in that way it could go on 
+that means  whatever is this function f x  a function can be represented as an array   a 2
+dimensional array so  that all as a table  So  this we have to remember either as 1 array or as 2
+arrays  because if this was integer this was float then I would have needed 2 different arrays  So  here is a function now let us look at another aspect 
+
+I do not have the function  but I have got some data right  So  here x and here is y and I have got
+some data points for x equal to this is the y point   So  if I call it x 0 this is y 0  Next one could be
+here - x 1  it is y 1  Here maybe it has come down for x 2 it is y 2  So  I do not have a function
+right now  but I have got different data points and I have to find out the function  So  that is also
+another very interesting thing finding out the function that can represent this distribution of data
+points  might be here again there is x 3 and it is again gone up here 
+
+So  it is not a straight line if I want to fit a curve to meet that how will that curve look like  The
+curve will be something like this right and I have to find out what function is this curve what is
+the function  I do not know as it that is another challenging point 
+
+So  first of all graphs or data points graphs can be represented as table and the distribution of
+data points can also be represented as table  because here in this scenario I do not have a
+function  but certainly I have got the x and y values known to me  Therefore  I can represent that
+as a table  Another point to note here is that usually this independent variable the sampling points that I am taking our usual equidistant 
+
+So  I can say x 1 minus x 0 is some value h x 2 minus x 1 will be the same h  Usually we
+represent that in order to see a fixed incremental increase of the independent variable  how much
+does the dependent variable vary   So  I can say in general x i plus 1 minus x i is equal to h right 
+
+So  this is typically how we write now  We have got a number of problems to solve using data 
+
+So  for example  let us start with one problem finding the root of a function some function fx 
+Now finding the root means essentially it is solving the equation  So  if I have got a function fx 
+then my equation is fx equals 0 and I want to solve this right and I want to find out that root  at
+least 1 root 
+
+Now what do I mean by the root  Say there is a function like this  So  for what value of x f x
+equal to 0 is the equation  So  this one is fx  y or fx  So  we are to find out for what value of x 
+for which value of x  f x is 0  So  that is the root  Now this particular function if this be an fx 
+then it has got 2 distinct roots  another function could be something like this could be just like
+this where I have got one root  this is the point where f x equal to 0 all right 
+
+So  one of the major problems is finding out the root of a function or we will say in general the
+root of a polynomial  Why are we saying a polynomial  Because you know that any function say
+fx is equal to 3 x squared plus 2 x plus 3 is a polynomial of degree 2 or this is f 1 x 
+
+I could have another f 2 x  as 4 x this is a polynomial of the 4 x plus 3 maybe  Now anybody who
+remembers cool coordinate geometry this is a linear equation  because it is a polynomial of
+degree 1  that means  if we say this to be y then this is y equals m x plus c  So  m this 4 is
+nothing  but the slope of this straight line 
+
+So  there will be some slope of this straight line  this is linear   This one is not linear this
+quadratic  So  I can have the different functions which can be written as a polynomial and when
+the polynomial is equated to 0 it becomes an equation and we want to solve that equation 
+Problem number 2 is interpolating a function  I will describe what interpolation is a little
+later But  before that let us try to see a very simple way of finding the root of a function  say I
+have got a function x and y alright and a function is something like this 
+
+Now  I want to find out this point  What is the value of x  This value  for which this y is 0  Now
+the method that we will be talking about is known as the bisection method  This is a very
+common and interesting approach  you have seen in binary search also we have partitioned the
+array into 2 halves and then went to one half  Very similar to that let us see how the bisection
+method tries to find out the root  First we start finding 2 arbitrary points say x0 and x1  such that
+fx0 and fx1 are of different signs  So  here you can see this is plus  this is minus  f x1 is the y
+value corresponding to x 1  So  if the y value of x0 and x1 are opposite then it is immediately
+understood that the root must lie somewhere in between  
+
+So  we will then try to find out the midpoint of x0 and x1  Suppose the midpoint of x0 and x1 is
+x2  So  if x2  fx 2 and f x0 are out of opposite sign  then the root must be I have (I have reduced
+my space right) so  it is between x2 and x0  So  I again find out the value the midpoint of x2 and
+x0  Suppose that midpoint is here  suppose this is x3 and these 2 fx3 and fx2 are of opposite
+signs  Therefore  I will find the mid midpoint of these 2  So  suppose the midpoint of these two is
+this x 4 here 
+
+Now still this one and this one are of opposite sides therefore  I will try to find out the midpoint
+of these two  So  I will come somewhere here  In that way we approach till what till we find that
+the value of y is very close to 0  very close to 0  Why am I saying very close to 0 not exactly 0
+there are reasons for that  reasons we are coming to that  A computer works with finite
+representation of numbers 
+
+So  we may not get exact 0  but suppose I get this and then I can assume that to be 0 because it is
+very small and often we call it that that the value of fx at that point is less than equal to some
+very small value epsilon that will decide a prior 
+
+So  however so  you have seen this approach  Now one thing that you can quickly think of that
+how would I know that these 2 are of opposite signs fx 1 and fx 0 are of opposite signs  If I take
+the product of this if I take the product of this then  obviously  if they are opposite signs the
+product will be negative that is less than 0 
+
+So  at every point we check whether they are less than 0  If there is no root  suppose it goes like
+this then I will not find any point where they are of opposite signs ok  So  that is the basic idea of
+bisection method  Now  when I carry it out through a computer such attempts to solve such
+problems known as programming numerical methods 
+
+We will start with some representative  relatively easy one examples of those  Some numerical
+methods  one of them is finding the root of a function  root of a polynomial  Now  while doing
+these numerical methods we always encounter errors and our algorithm will be better  if the error
+is less  Now what do I mean by error  Say  I am computing 4 by 3 Now what is the correct
+result  the most accurate  Do you know that no it is 1 3 3 3 3 it goes on 
+
+Now  you know our computers have got some storage locations of some 8 by 8 bits or 16 bits
+like that 
+
+So  depending on that I have got a finite capacity to store the data  Therefore  I may represent
+this as says 1 3 3 3 3  I just start with say 6 digits all right  6 7 8  I can store 8 digits maximum  6
+after decimal 1 decimal and this so  6 places 
+
+Therefore  the actual thing was much more  So  I am actually committing some error  So  the
+error in computation is the exact value  the difference of the exact value  by this m and the
+computed value  it can be positive or negative all right  Suppose the result is actually 1 5 2 3 that
+is the exact value suppose and during my computation I got 1 5 2 2 8 2 3 then the error is the
+difference between these 2 and the error is therefore  if I subtract this it will be 0 0 0 0 0 0 1 7 7 -
+that is the error  Now the smaller this error is more accurate my result is  I think it is very clear 
+Now there are 2 types of errors also  one is a round off error for example  here I could have
+rounded it off as 1 5 2 3 
+
+So  suppose the actual thing was this and I rounded it to 1 5 2 by approximating if I go by 2 bits 
+That is one type of error  other type of error is truncation error -this was there I have just dropped this 1 5 2  because I could not store more 
+
+So  there are two types of errors right  So  truncation error and round off error  Another term that
+you need to know is the absolute error -absolute error is nothing  but the absolute value of the
+error and relative error is absolute error divided by exact value  the absolute of the exact value 
+Absolute error is the error’s absolute part by the exact value and percentage error will be relative error times 1000 relative error times 1000 
+
+So  we can say that percentage error is relative error in to 100  
+
+So  now just look at this have a quick look at these definitions  Absolute error means the absolute value of the error  relative error is absolute error divided by the exact value and then we come to the percentage error  which is relative error times 100 
+
+Now  another important thing that we have to consider is accumulated error  but that will
+consider later  In the next lecture we will move  So  whatever we do the way we do the computation we must be very careful about the algorithm be such that it is it does not
+accommodate too much error 
+
+However  discussing about error analysis in general is beyond the scope of this course right now 
+So  we will in the next lecture start with the bisection method as I have explained and then move
+to some other methods 
+
+We were talking about errors and round off errors and percentage errors  Now  I will briefly
+show you that if we commit an error how that error continuously gets accumulated and
+ultimately has a much larger effect 
+
+For example  suppose the exact value is 9 9 8 and we compute 10 all right  So  the inherent error  first the error actually is 0 0 2 right 
+
+Now  as we go on iterating suppose x 1 is 10 times x 0  then the exact value should be 99 8  but
+here we will get 100  So  you can see that the error has increased to how much  0 2  Now if the
+next iteration x 2 is again 10 times x 1 then it will be 9 9 8 whereas  the computed value will be
+1000  So  the error is becoming 2 
+
+So  you see how with if we start with an inherent error how that error accumulates over time 
+Ok  So  we can say a very important term is relative accumulation of error  which is accumulated
+error divided by exact value for that iteration 
+
+For example in the first iteration the accumulated error was 0 0 2 divided by the exact value
+which was 9 9 8  but later on it became 0 2 divided by 99 8  So  this is this was 0 002004  but
+whatever that is it is not that important I do not want to confuse with you with this 
+
+Now there are some cases where this accumulation of error actually goes on increasing  If the
+rate of accumulation error decreases or if the rate of accumulated error increases  but the rate of relative error decreases  then we call it a stable algorithm 
+
+However  I am not going into the details and the intricacies of this  but this is just to give you an
+idea how the error propagates through iterations  So  we must be very conscious about the rate of increase of this error  
+
+With these words we move to the algorithm which we are planning to discuss in this lecture that
+is a bisection method 
+
+I have already told you that the bisection method is given a particular function  some function  on this x and y axis If I have some function that moves in this way then we start with any two points any two points  arbitrary points here and maybe here  now these two points will not do 
+
+Because if I select these two points then both of them are positive so  that if I had selected this
+point for example  these two points x 0 and x 1 that would not have served my purpose because I do not know where the root is there or not 
+
+So  I would rather select two points  which are of opposite signs and therefore  I know that
+somewhere in between the root lies  So  I will take the midpoint of this  somehow here  if this
+point is negative then I will keep the positive fixed and I will find out the value of y  So  these
+two are opposite signs  So  the root must be somewhere here 
+
+So  in that way I come to this one and find out the value of the root here  In that way I go on
+dividing it till I come very close to the root as it is being shown here  It is very close to the root 
+Now how close  that will depend on my decision that is the basic approach of bisection method 
+
+So  with that let us try to have a look at the algorithm  therefore  first we start  we define the
+function f x and get the value of the interval A B that is there is a function  So  here there is a
+function and the function can be long enough  So  I take the limits  I have to find out the root
+within this interval a and b and I find out how much error is required  So  how much error is
+acceptable 
+
+So  this allowed error is the epsilon that I was talking of and also the number of iterations 
+because it may be that in some case I am not finding the root  because I am going on looking at
+say for example  this sort of scenario and my a is here my b is here 
+
+Then  obviously  the root does not lie between this  So  I will go on doing this bisection and
+again i am doing this bisection  for how long will I go on  But still it may be that I might not find
+the root therefore  there is a maximum limit that is kept -number of iterations 
+
+Now I initialise I to be 1  just some index to be 1 and then I call a subroutine or a function  bisect
+the midpoint  So  here is a sub subroutine  you see what it does  Or a function  What does it do
+here  It finds out between A and B the midpoint and increments the iteration and prints the value
+of x 1  x 1 is a middle point 
+
+So  if my function was like this and this was a this was b  then the root mass lies somewhere
+here  I find out the midpoint of this  So  this becomes x 1  There is a next one and what is the
+iteration  Next is F  that means F mid less than 0 
+
+So  there can be 2 things  Here I select this to be my b and this to be my a  Now  obviously  if I
+take the midpoint then the midpoint will be somewhere here  a and b are of different signs  If F
+mid is not less than 0  then a should be x  that means  I will now move it on this side and this
+should be the next a and between these two I will have to find out and every time I am trying to
+find out -whatever value of F X that I compute  is it less than the absolute error   If yes then - x  
+I am getting my solution otherwise I am going on doing this 
+
+So  this is a flow chart of the whole thing  but I think you will be more interested in looking at
+the algorithm  Let us look at the algorithm for a second and the program  Here is algorithm you
+see this is much more understandable to you 
+
+I read x 1  x 2 and the error  Here x 1 and x 2 are the initial guesses all right  Here is my thing  I
+have taken this is x 2  this is x 1  ‘e’ is absolute error  that means  how much error is permissible  compute F 1 that is FX 1  compute for this function this value and f 2  compute this value   If f 1 and f 2  the product of these two is greater than 0   that means  my initial guesses are wrong  because both of them are positive  then I can do many things I will instead of going to 11(my initial guesses are wrong) I will again ask for new guess all right 
+
+So  I take a new guess and I find that it is less than 0  Then I take in this step x 1 plus x 2  mid of that  So  suppose mid of that is this one and that is becoming x  read this as fx 1 minus fx 2
+divided by x is less than e then display x  that means  if my error between these 2 points  the
+difference is less is 0 0 0 0 2 and that I can assume as 0 then I will display this particular value of x 
+
+So  right now it is not the case otherwise I will make this f to be fx I take this all right  Now
+between these two I again divide  I come here and in this way I go on alright  So  you will be
+able to write the program as the program runs  So  just to show you (I am sure you can write the
+program yourself) how can you translate this in the form of a code 
+
+So  here you see let us try to understand this code it is a C program for the bisection method  I
+have included a st stdio dot h  math dot h and there is some function  because I have to find the
+root of a particular polynomial 
+
+So  for example  here it is given this is a polynomial  So  what is this polynomial it is x cube
+minus 4 x minus 9  So  that value of fx has to be computed  So  the function is the fun  fun is the
+name of the function  then there is another function bisection  this function performs and prints
+the result of one iteration 
+
+So  it is a plus b by 2  now in an earlier lecture we had talked about this -what is this  Because
+here when I am calling this function  I am calling by reference how  I am just passing the
+address x and whatever I do here once again is a part of revision you can see  If I come here -
+float star x  that means what  x is some variable and I have just passed the address of that 
+
+So  star x is the content of this  say 50  So  I passed it on and in the main function I am passing
+on the address of x   This we have seen earlier  So  I am taking the midpoint and incrementing
+the iteration  iteration is also a call by reference and float a float b are two points in between
+which have been passed on 
+
+Now  what is being done in the main function  In the main function I am setting the iteration to
+be 0 and here I am saying how many iterations are permitted 
+
+Maximum number of iterations  x  a  b  allowed error and some x 1 value is given  Enter the
+values of a  b  allowed error and maximum iterations  So  all these I read - the range a and b
+between  which points I have to do  a and b and how much is the allowed error and what is the
+maximum number of iterations  Then with this I call bisection  What do I do  Bisection and x 
+that means  this will give me the midpoint  I will call bisection here - a  b iterations 
+
+So  a is being passed here  b is being passed here  and the number of iterations is being passed
+here  Now here I am finding the midpoint and that midpoint is being returned here is common
+and then here at this point I call the function  that is I am computing the polynomial 
+
+If the polynomial ie the value of the polynomial at a  and the value of the polynomial at x   there
+is a midpoint that is less than 0  So  what happened  This was my scenario  here was a and here was b  now let me draw it 
+
+So  here was b and here was a  So  now  what I do  I got the meet point somewhere here  then
+the value of the function at this point and the value of the function at this point is a negative 
+Therefore  I move this b to x  x is becoming b and I do the same thing 
+
+Otherwise if it was on the other side I would have made x to be a  Is this clear  Then again I call
+bisection  After calling bisection I find if the absolute error of x 1 minus x is less than the
+allowed error  then I will print the root 
+
+So  this will go on until I exceed the maximum iteration  So  this is how I code and all of you
+should be able to practice this yourself  Next we will move to another algorithm  which is that
+another method  which is known as the Newton-Raphson method 
+
+This method adopts a different approach to find the root of the function let us try to understand
+this briefly 
+
+So  I have got a function like this  now Newton-Raphson method  what it does is  it starts at
+some x 0 and the corresponding value of the function at x 0 is f x 0  Now what it does it finds out
+the tangent at this point  So  what would that tangent be  That tangent is nothing  but f prime x
+0   because we know prime means d y dx 
+
+So  I draw the tangent here  the tangent intersects the x axis at some point  Let this be the value x
+1  I drew the tangent and got the value x 1  I come here and from here and from here for f x 1 at
+every stage have to check whether the value is close to 0 or not  obviously  this is not the case 
+
+Therefore  I draw another tangent from here and what is this tangent  This tangent is f dash x 1 
+derivative at this point  So  this becomes x 2  now I find out f x 2  Now I again compare whether
+f x 2 to is very close to 0 or not  Still it is not the case  So  I draw a tangent at this point 
+
+So  this is x 3 and I find out if x 3  Suppose this value f x 3 is very close to 0  Suppose this is
+within my allowed error  then x 3 is the root  Otherwise if it was not there from here again I
+would have to draw a tangent in this way it goes all right 
+
+So  this is the essence of Newton-Raphsons method  So  what are you doing here  We are taking a function starting with a point and finding a tangent to that curve to the function at that point and see where that tangent intersects the x axis  from there I find out f x 2 and then I go on doing this  So  I think this geometrical exposition will be very helpful to you  So  next let us try to see how Newton-Raphson method works 
+
+So  at every stage x n plus 1 is x n minus f x n by f dash x n  why  Because of the simple reason that I had this curve and this was my x n  from there I drew the tangent  So  this was f x n and I drew the tangent here  then if I divide this and subtract from here I will get this x n plus 1 here 
+
+So  you see it is coming in the other way because at every stage I am computing this  Next  here x n is the current known value of x  f x n represents the value of the function  f dashed x n is the derivative of the slope at that point  x n plus 1 represents the next x value that you are trying to find 
+
+So  this expression is coming from the fact that f x by d x  where d x is delta minus x therefore 
+the term f x by f dash takes is actually the value of d x that means  by how much I should count
+down 
+
+So  you can see from this expression f x by f prime x is f x by f x by delta x  that means  the delta x  actually this is the delta x part and that means  how I am shifting this x  So  the x was here and I am shifting it by delta x and coming here  again shifting it by delta x and coming here like that I am going all right 
+
+So  suppose fx was x square minus 4  then f prime x is obviously 2 x and x 0 was 6  suppose I
+assumed x 0 to be 6  So  here is how it goes  First iteration x 0 is 6  f x 0 is supposed 32  32
+because 6 squared 36 minus 4  f prime x is what  f prime x is 2 x that is 12  This is x n and the
+next value will be x n  that means  6 minus 32 by 12  So  whatever that is I subtract and I get the
+3 3 3 next iteration I come to 3 3 3 
+
+So  it was something like this that I started with 6 and then I moved to 3 3 3  So  you see it is
+converging very fast 3 3 3  then at 3 3 3 the value of fx 1 is 7 0 9  here if you compute this  the
+derivative will be twice of this  that is 6 6 6  derivative is 2 x  6 6 6  If I subtract this 6 6 6
+divided by 7 0 9  subtract it from 3 3 3 is 2 2 7  So  my dx is 1 0 6  I go on like this and
+ultimately I come to a dx of 0 01  I assume 
+
+So  next time it is 2 2 7  I start with that again find the next value to be 2 2 7 so it will be 2 0 1
+and with 2 0 1 I compute and gradually you see the dx is coming down  As the dx is coming
+
+down  that means  I am approaching the actual root  So  this is Newton-Raphson method and we can very easily code it 
+
+So  here is an example  Now you can see this it starts with 6 goes to 3 3 3  then from 3 3 3  I am
+coming to 2 2 7 then from 2 2 7  I am coming here and gradually the error is not increasing  So 
+it is very much converging  So  I get the solution with 2 0 1 
+
+So  quickly the algorithm will look like this - again I will read x  the a maximum error allowed
+number of iterations and d  d is for checking the slope  here are the comments - x is the initial
+guess  absolutely error is e  n is the number of iterations 
+
+So  do in a loop  i to n in steps of 2  f x f is equal to f x and then f 1 is f prime x  Now these are 2
+functions  which you have to write and now why am I keeping this check  Why am I keeping
+this check  f 1 which is a slope if f dashed x is too small  that means  what that the slope is
+nearly horizontal  that means  I am not going to get something like this  If I come to this point
+and try to find a slope of this  the slope will be very horizontal 
+
+So  this is not a good choice  In that case I have to reduce it and come to a point  where I can find a slope all right  Now  in that way I go on and find the whether it is coming to the close to the root and go on  Now  if it goes on the iteration goes on say for example  it is possible that I am missing the loop  coming close to that- say a curve like this 
+
+The slope of the curve was such that I was trying to come here and somehow I miss the root  I go to another point  So  that is another special case I need not bother you with that right now  So  let us have a quick look at the program 
+
+So  here we are trying to find out the root of a function x log x to the base 10 minus 1 2  So  that
+is the function that function is embodied in another C function  Now d f is nothing  but f dashed
+x 
+
+So  if this function is given  I also keep f dashed x written  So  this is f x  this is f dashed x  Now
+I know I have already pre coded them and that will return me the value for different values of x 
+
+So  now again I read as scan f  i read the initial x 0  the allowed error  the maximum iteration 
+Now  then in this loop what I do I find fx by f dashed x and that is h -how much I should change
+the initial value  The initial value was x 0 with which I started  I subtract that and come to the
+next point 
+
+If absolute value at that point is less than error then that is a solution  Otherwise  I will go up and
+repeat this  Now if I go on and ultimately if I overshoot the maximum iteration  then I can say
+that the required solution does not converge or the iterations are inefficient 
+
+So  Newton-Raphson usually gives us a very fast way of finding the root  but sometimes it does
+not converge and that is one problem of that  However  there are many other sophisticated ways
+of finding roots  just to summarise I would like to say that what we have learnt in the past couple
+of lectures is that one of the major technological requirements  a computational requirements are
+finding roots of polynomials for many solutions for many engineering solutions  I have to solve
+equations 
+
+For that there are many methods we have just gone through to simpler methods one is the
+bisection method and the other one that we saw just now is the Newton-Raphson method  Next
+we look at something else called interpolation and other things 
+
+Thank you 
+
+Today we will first discuss a technique called interpolation  We have seen how a function can be
+represented in a computer in the form of a table or a 2 2-dimensional array  Now what is
+interpolation  Let us try to understand 
+
+Say  I have got a function  where I know the  I have got a function which is something like this 
+But I do not know the function before that  all right  If I had known the function or tje
+description of this function  in that case given any x  I could have found out the corresponding y 
+right 
+
+But suppose the function is not given  instead what is given to us are for some specific x’s (say x
+1) I have been given this value  all right  This value of y  For x equal to 2  I have been given this
+value of y  all right  This particular value of y  Similarly  for 3  I am given a particular value of
+
+y  but I do not know what is the value of this function for 1 5  So  if I call this to be the function f
+of x  then f of 1 5 is not known  Although I know that f of 1 is say something 2 5  I know f of 2
+to be may be 3 2  f of 3 maybe something like 4 
+
+But this information is known to me  Given this known part  can I find out what are the
+intermediate values for if 1 58  1 3  2 5  2 6  That is the task of interpolation  that means  given
+some values known  I want to find out the value of the function for some independent value of
+the dependent variable  So  for a particular x  what is the part  What is the y  That’s what I want
+to find  Now you see you can look at this blue line and say that it’s so  simply you draw it like
+this and you will find the value of y 
+
+But unfortunately  what I have is not the blue line  What I have is only the rate crosses and this
+line is not there  I do not know these 3 points - whether the curve is something like this or the
+curve could be a straight line through this points  right  In that case you see  if it was the case 
+then the value of x  this particular x would be different from this  So  I have to actually see that
+what is the curve that best fits all these given points  This problem is known as interpolation 
+
+Now  I can extend it suppose some table is given to you  where values for f 1  2 and 3 are given
+and so  the range is from one to 3  but you are asked for some particular x prime  which is
+beyond this range  In that case it is also interpolation on the other side  that means  beyond the
+boundary  That is known as extrapolation  all right  Right now  so  basically the concept of
+extrapolation and interpolation are always the same 
+
+So  here what I will try to see is given some values of fx  some known of fx for some particular
+x’s  how do you find out the value of fx for some intermediate value of x  That is the task of
+interpolation Now here I show I had shown a curve usually you can also start with a table like
+this  where some x’s are given (Refer Slide Time: 06:03)say 0 1  0 2  0 3  0 4  0 5 and for each of
+them we have got some y value 2 7  3 2  1 6 comes down again  say  0 6  and again it goes up say
+3 2 
+
+Now  if this be the table  then my question is for interpolation  what is the value  What is the
+value for x which is 0 27  What is the value of this  So  that is the task of interpretation  Now 
+obviously  a simplest possible thing is if I can fit in a line which is known as a linear
+interpolation 
+
+So  I have got some points here  all right  I try to fit in a line in between them or let me do it in a
+different way not exactly this line  because this line is matching 2 points  but not the others 
+
+So  this is by y and this is x  So  there could be some points like this something here and
+something here like this equidistant points  Somehow I draw line like this  It is a straight line 
+although my drawing is a little curved  but it is a straight line  So  one way is that I try to find out
+a line such that I minimise the error  So  of course  if I assume that this line is representing my
+function  then I can see there is some error here  there is some error here and in other places 
+
+I could have fitted another line also  I could have changed this line a little bit  One of the ways is
+to find the line that minimises the error  Now it depends on how you define the error   Now here
+you can see it is a negative error  it is a positive error  like that it can go on  So  one way is to
+find the line such that the squared sum of squared error is minimised  That can be one way  that
+means  what is an error error  When ei is (when I take whatever value my line is saying  let let
+me call it li ) whatever is the actual value minus yi 
+
+If I consider that to be the error or the other way  now you can see it is a positive or negative
+when I take the error of all these  So  that could be a sum of error  But here what I am saying is
+that  I can have the square of this error  and I can try to find out a line such that ei square is
+minimise so that I get a very good line  Now suppose I get a very good line like this  then I will
+have I have the equation of that line  Now given 2 points it is very simple  right  let us take the
+simplest case first 
+
+So  if there be only 2 points given  then I can certainly draw a unique line between these 2 points  right  So  I can find out the equation of these  So  this is x or school level co ordinate geometry x1  y 1  x 2  y 2  So  you can find out the slope of this line  You can find the slope of this line which will be nothing but y 2 minus y 1 divided by x 2 minus x 1  So  once you get the slope then you can find out the line  So  the school level equations like y minus y 1 is equal to m into x minus x 1  where m is this m is a slope 
+
+So  you can find the line so  when you find the line  then your problem is solved  Suppose you
+get a line of the equation a x plus c  c is this and you get the coefficients like this  Now given any
+x  I give x prime then from that equation I can straight way find the value of y a x prime plus c 
+right  That’s straight forward  but the problem is that often it is not only 2 points  but the points
+are rather distributed as I was showing in the earlier one like this  Where I do not get an exact
+line  that is cutting through all the points  Here I will try to minimise the error and I will choose
+such a line 
+
+Now  when I choose such a line  that means  I have chosen an equation  Therefore  again from
+the linear equation  I can find out the value of y for any given x  So  this approach is known as
+linear interpolation  however  the linear interpolation often as you can see the error will be there 
+So  people try to find out more accurate solutions  So  first of all we have seen what is linear
+interpolation  the basic idea is very simple we try to fit in the best possible straight line  through
+all the points  So  that the error is minimised  total error is minimised 
+
+So  one way is to minimise the sum of the squares or there could be some other measures you
+can take for error  that should be minimised so  you get a line to your satisfaction  So  once you
+get a line to your satisfaction  you know the equation of the line  Therefore  given any x you can
+find the corresponding y  Now fitting this line always  the there may be situations where the
+points are distributed in such a way for example points are something like this  all right  is very
+difficult to find the line over here 
+
+So  often I I would like to find out a curve  or maybe another curve even better  that can be that
+goes through these points like this  where I have got errors  but I am trying to fit in a curve  So 
+that is not a line  this is not a linear interpolation  where are further extensions like quadratic
+interpolation  spline interpolation  cubic spline and all those  So  it is better to know the names 
+spline interpolation  quadratic interpolation  where I want to fit in a quadratic curve etc 
+
+But today we will discuss another interpolation technique which is known as LaGrange
+interpolation  in the name of the mathematician who invented it  So  let us have a look at the
+lagrange interpolation 
+
+Interpolation as you have understood is given a set of k plus 1 data points - x 0  y 0  x 1  y 1  x 2  y 2 like that up to x k y k  so many data points are given  The LaGrange polynomial is this - I
+have to find out for a particular x  x minus xn divided by xj minus xm  where m is varying from
+0 to k  For all these m is varying  So  x 0  x 1  x 2  x 3 for all these I will do that and xj minus
+xm  where j is for a particular LaGrange interpolation 
+
+So  you see it is for l 1 x it will be x minus x 0 by x 1 minus x 0   x minus x 0 by x 1 minus x 0 
+like that it will go on  all right  so  this is the LaGrange polynomial  So  using this polynomial let
+us see how it works  just to give you an example 
+
+I have reproduced that polynomial  that I had shown in the earlier slide here again  you can say
+this  Now suppose I have got the points given - look here  the points at a given are for x value 1 
+fx is 1  For x value 2  fx is 4  3 and this 9  So  I have to fit in a polynomial  So  my polynomial is
+Lx  now each term of this is one lx  So  this is l 1 x  this is l 2 x  this is l 3 x  like that ok  So  you
+see the value of x is 1  1 times x minus x m  M will be something that would be not the same as j 
+
+So  it will be I have got the 3 points so  I will not take this 1  x minus 2 divided by 1 minus 2
+times the second term x minus 3 divided by 1 minus 3 plus 4 now I am taking this one so  it is 4
+and  in that case  I leave out 2  my x j is now 2  So  x minus 1( I will not take x minus 2 here 
+Because look at this m not equal to j So  for the other x’s  I have selected this row  So  I will only
+concentrate on the other rows) divided by 2 minus 1 into x minus 3 the other row divided by 2
+minus 3  Here I take 9 - this value and I am taking this row 
+
+Now  so  now I am taking this row  right  I have taken 9  So  x minus 1 by 3 minus 1  x minus 2
+by 3 minus 2  If I solve this I am getting a polynomial x square  Possibly you can see that is a
+perfect fit with the given data points - x 1  fx is x square  that is 1  2 it is x square  4  3 it is x
+squared 9  So  it is in this case  there is no it is absolutely a perfect fit   So  this is how I get the
+polynomial  all right  Let us try once again  For these data value  for x 0 equal to 1 the fx is 1 
+for x equal to 2 it is 8  for x equal to 3 it is 27 
+
+So  obviously  you can see it is no longer x square  all right  It is not also x cube  because here it is cube  it is matching the cube it is actually x cube  right  But let us try to fit in a polynomial
+here  So  what is that polynomial using the LaGrange method  I will first check one  So  I am
+taking first row  taking this value one here  then x minus 2  1 minus 2  Times x minus 3  1 minus
+3 plus next time I take the second row  8 times x minus 1 divided by 2 minus 1  because here it is the value is 2  For the third row it will be again x minus 1  3 minus 1  x minus 2   6 minus 2 
+
+By doing this I am not getting x cube which would be a perfect fit  but I am getting a close
+enough polynomial which is 6 x square minus 11 x plus 6  which will be approximating the cube
+function very closely  you can see that  So  it is not that LaGrange polynomial will always give
+you the perfect fit  but it gives you a very close fit  So  this is what is known as LaGrange
+
+interpolation  So  if I want to write a program and try to solve it  I left to implement a function  I
+have to write a function that will implement this or this  right 
+
+Let us see how we can do that  So  here is an algorithm  scan the number of data available for x
+and y values  Now here there is the how many data points  This is telling how many data points 
+you are finding the data  Now here loop for i equal to number of data factor  then here you are
+computing this  Here you see what we are trying to do  At this point we have just read the data 
+and here in a loop we are trying to compute  here we are finding the sum 
+
+But here in the loop  I am finding the factor so  if you go to the earlier the slide  you will find
+that I have got these are my factors  right  I am finding each of these factors  I am multiplying
+them  this is a factor  this whole thing is a factor  and then I multiply that with the coefficient and
+add them up  So  I am doing the summation at the end  So  here you see that I am taking the
+factor then I am taking whatever is the value (this part you can yourself compute)
+
+The key part is computation of the factor part  where I am showing this part  you can see that for
+I 0 to data  i plus plus I am initially a factor is one 
+
+Because I am multiplying that  then if i is not equal to j  I will take factor times the value minus
+the data  So then ultimately  I am printing the coefficient  So  you can translate that into in the
+form of a c function  That is the basic idea of LaGrange interpolation  you can similarly write
+programs for linear interpolation  and other interpretation techniques  So  the point of this course
+
+is not because I assume that you now know how to do programming and these are simple loop
+type of programming 
+
+So  you will be able to do that  So  whenever you want to solve apply some numerical methods 
+you will have to first look at the technique then try to find out the expression and you will have
+to write an algorithm so that you can solve it ok  In the next lecture we will discuss 2 other very
+interesting techniques for integration and differential equation solver 
+
+Thank you 
+
+In this lecture  we will be looking at another numerical method technique  we will actually look
+at two  First  we look at integration  how we can integrate a function  there are several methods
+for doing that  We will look at only one method and you can after that  you can look up at for
+other methods  Next will proceed to see  how ordinary differential equation can be solved using
+numerical techniques using program  So  first of all let us start with integration 
+
+Now  all of you know  what integration means given a particular function integration is say I
+have got a function like this and I want to integrate  Suppose this function is f x and I want to
+integrate it within the range a and b  So  we write that as integral a to b of f x and you also know
+that this integration actually means the area that is under this curve  This value is the integration 
+So  we will look at how we can solved this problem  The simplest a very simple method is a
+trapezoidal method which will discuss here 
+
+Let me go back to this this case  Now  you can see that I can approximate this curve in a very
+simplistic case using a trapezoid  So  I have got a trapezoid here  let me draw in blue  So  the
+area under this trapezoid is approximating the area under the curve  but that is becoming possible here (except for this error) because the curve was very much not very skewed in that sense  but if the curve where something like this 
+
+If it was something like this and I was trying to integrate it between these rangers then if I had
+fitted a trapezoid here  then the amount of error would be much more because I will be
+committing errors at this points  I am not considering this  I am over considering this points  etc 
+
+So  the error will be more  So  it is not always the case that a simple trapezoid  one single
+trapezoid will solve  but let us start with that and try to understand how we can go ahead with the problem  So  the area under the curve in this particular curve as you can see here  this particular curve that has gone through this is a trapezoid  under the curve is a trapezoid  This part if I assumed to be a trapezoid in that case the integral of f x d x is the area of the trapezoid and we know that the area of a trapezoid is not nothing but half the sum of the parallel sides  that means  f a plus f b divided by the height 
+
+Now  if I look at it these are the parallel sides then the height is this - b minus a  this amount 
+right  So  this is a known result therefore  I can see if I can approximate a curve by a single
+trapezoid in this way  b minus a times f a  f b plus f a by 2 or f a plus f b by 2  but of course  we
+will see that there can be errors due to this approximation  but this is a simple formula which we
+can quickly compute  It is very easy to write a program for that  you have got a function that will
+
+compute the curve  So  you call it for a and call it for b and compute this expression  you will get
+the integral all right 
+
+So  here is an example why is it important suppose a vertical distance is covered by a rocket
+from time 8 to 30  So  my timeline is from 8 seconds to 30 seconds is given by this formula  So 
+the vertical distance overall  the total vertical distances is this is - a complicated formula  Now
+using single segment trapezoidal rule  let us try to find the distance covered 
+
+So  we know for 8 and for 30  if I compute this function (this was my function) 
+
+So  for f 8  my function is yielding this value and for f 30  the function is yielding  this value  We
+can compute  using your calculator you can find it out but you need not do right now  So  you
+can compute the values at these 2 points because this is the overall function  So  this is the f 8
+and f 30  So  what will be my integral  My integral will therefore  be 30 minus 8  b minus a   f a
+plus ab by 2 
+
+So  that is coming to 11868 meter  the distance covered is this  but however  the exact value  if
+you computed the exact value if you do a detailed computation will be 11061 meter  So  there is
+an error  obviously  there is an error because I have approximated the curve using a trapezoid 
+Now  let us see how great is the error  So  we can see that the true error is minus 807 meter 
+right  that is quite significant 800 meters and the absolute relative error which is the actual error
+ie true value and the computed value and divided by the true value you find that I am getting
+more than 7 percent error  how can you better it  
+
+So  our answer will be instead of fitting in a single trapezoid  I can try to fit in more than one
+trapezoid here like something like this - I fit in one trapezoid here  I fit in another trapezoid here
+and hereby I can approximate  I can minimise my error to some extent 
+
+So  here  what we are trying to do instead of taking 8 and 30 and fitting in one trapezoid for the
+whole thing what we are trying to do is we are fitting in one trapezoid for 8 to 19 and other for
+19 to 30  So  now  again using the same formula we find then here is one 19 to 8 to 19  this is the integral plus the other trapezoid is giving me this  So  I am fitting in 2 trapezoids now 
+
+So  if I do that  then let us see whether the result is being bettered  So  I compute f 8 at f 30 and f19 and compute both of these values  the areas under the curve here and here and the result is
+11266 meters  Now how far is it from the actual 
+
+Now you can see that the true error has reduced from 807 meters to 205 meters So  that tells us
+that if we can extend this procedure and fitting more and smaller but more number of trapezoids
+my error will come down further still  (Refer Slide Time: 09:34)
+
+The multiple segment trapezoidal rule  therefore  is that we divide into equal segments  So here
+is one trapezoid here is another trapezoid here is another trapezoid and here is another trapezoid 
+I am getting 4 trapezoids here and trying to formulate this  I can do that in this way  So  the
+integral is this whole thing which will be a sum of these trapezoids  Remember these lines  these distance is the same  So  I am dividing b minus a by some particular value n and that is my h So  this is h  this is h this is h like that I am going for equidistant points and drawing the trapezoid from there 
+
+So  therefore  if I follow this  as is shown in this way  the trapezoidal rule can be written as
+integral from a to b is sum of half fn plus fn plus 1  that is f a plus f b by 2 times the particular
+distance that is there  x o x 1 minus a  x 2 minus x 1  Usually do it in the equidistant way 
+
+Ok  So  now  multi segment trapezoidal rule is therefore  an integral I which can be broken
+down  this is simple  From a to a plus h  I can have f x d x  a plus h to a plus 2 h f x d x plus a
+plus n minus 2 h to a plus n minus 1 h f x d x a plus n minus 1 h to b 
+
+So  all the segment serving as it together  Applying this I get this formula b by a divided by 2 n
+because 2 is coming n times  So  f a plus f b plus 2 into f a plus ih because that is coming twice
+here once and here once  you see here if a plus h will come then here a plus h will come right  
+
+So  using this let us do the example again the same thing using 2 segment Trapezoidal rule  we
+could find that the error is coming down 
+
+We have already seen that the true value of error is coming down 
+
+And the absolute relative error has come to 1 853 
+
+So  now let us come to c programming  straightway  how can we encode it using a c program 
+you see here  So  I am reproducing the result here again 
+
+So  integral of f x d x between a and b will be h by 2 f a plus 2 f a plus h plus 2 f a plus 2 h  why
+this 2 is coming because in the first zone f a and f a plus h second zone f a plus h plus f a plus 2
+h  So  each of these intermediate points are coming twice  that is why this is 2 and I have got this
+formula  Now  as a c programmer  your task is very simple you see here that I have defined n  i
+whatever  I am asking the user for the necessary inputs  how many number of subintervals that
+you want to have  The initial limit a  you are reading the initial limit b  all those things you are
+reading 
+
+Now  the integral computation is done here  What is being done  I am finding out the absolute
+value of b ( b minus a divided by n and I am taking the absolute value of that) because it could
+have gone on the other side also  So  now  here I am just computing the sum  what sum  This
+part  Initially x is a plus i h  sum is sum plus f x  So  next time  it is becoming 2 I am adding all
+
+those things here  So  here I am in a loop  I am doing a plus i h initially i is 1  So  1 h  2 h like
+that I am going on 
+
+Ultimately and I am completing the sum here  some plus f x and note that f x is a separate
+function that is being kept somewhere here and then ultimately I find the sum  sum is these
+things - a plus h these points  Now integral is h by 2- this part  f a plus f b plus f a plus f b plus
+twice the sum a plus a h  a plus 2 h  a plus k h like that t a plus i h has been completed inside this loop and that I had with 2 here and here is my integral  So  that is the trapezoidal rule 
+
+The program is so simple  if you understand the concep  Next we will move to another very
+important engineering computation that is needed in solving ordinary differential equations 
+Quickly lets all of you know what a differential equation is 
+
+We will in particular look at Runge Kutta fourth order method and here I will show examples
+that you can also find in this site of University of South Florida  numerical methods and I have
+
+taken the slides from them with the permission  Now you see how to write an ordinary
+differential equation  Now an ordinary differential equation you know -it is d y d x f x y  
+
+So how do I write it  I write it as suppose this is something that is given  d y d x plus 2 y is 1 3
+into e power minus x and what is this part  This is the initial condition  Now this can be
+rewritten as (just by changing the directions because I have to bring it to this form) d y d x is 1 3
+e minus x minus 2 y  So  in this case we will assume that our f x y   there is a d y d x which is 1 3
+- this thing ten e to the power minus x minus 2 y this is our differential equation that we will
+have to solve  (Refer Slide Time: 17:18)
+
+So  for d y d x  the Runge Kutta fourth order method ( I am not going into the derivation of it for
+positive of time and you can always look at look into this at any website or you can look at any
+numerical method textbook) takes 4 terms and if this is the expression  given this d y d x my task
+of solving a differential equation is to find a particular y  right So  what we are trying to do y i
+plus 1 is y i  some particular y i plus 1 by 6 followed by a term and what is that term k 1 plus 2 k
+2 plus 2 k 3 plus k 4 - this whole thing multiplied by h  H is the again the sampling that is the
+distance between the individual points that we looked at  now what is k 1 
+
+When I am taking for y i  f x i y i - that particular function is k 1  What is k 2   Suppose there
+is a curve  Now I have been given the slope  I do not know the curve  If know the curve then I
+can find out the value of any particular y i plus 1 given any y i  Now given any y i  I am trying to
+guess the curve  right  I am trying to solve the curve  So  x i was here  x i plus half h  I am taking
+whatever was my h  I am taking half of h and what is the y part of this function y i plus half of k
+1 h 
+
+So  because k 1 was f i  k 1 was the function that was giving y given an x  So  I am taking this 
+What is k 3  This part is same  x i plus half h  but this part is now becoming much more
+
+predictive  So  it is half of k 2 h   that means  whatever has been completed here times h and k 4 is x i plus h  the last one is x i plus h because I am trying to solve the equation within this zone h 
+So  x i plus h  i start with x i and this is x i plus h times k 3 h  Here there is no half  Now this
+derivation you can look at  but ultimately I multiply it with 1 by 6 
+
+So  given this Runge Kutta formula let us quickly look at an example  that we have a nice thing
+to look at 
+
+Suppose a ball is at 1200 Kelvin and is allowed to cool down in air in an ambient temperature of
+300 Kelvin  So  here the ball was heated and the air is cooling it down  Assuming that the heat is
+lost only due to radiation the differential equation for the temperature is given here  This one 
+where theta 0  we know the initial condition is 1200 Kelvin  Find the temperature at t 480  So 
+what is my x i  So  now  if I assume a step size of 240  I want to find out the temperature at 480 
+So  suppose it was at a particular temperature after 480 seconds 
+
+So  here is the time  it was at 1200 and I have got some radiation formula using which it is
+coming down  So  I want to find out what would the temperature be at 480 seconds from the
+starting point where it was at 1200 degree Kelvin  I want to find out this temperature  That is the
+y i I want to find out  given the slope of this differential equation 
+
+So  assuming a step size of each to be 240  if I take half of this then 240 then d theta d t  you can
+compute that  here  So  my formula will be theta i plus k 1 plus 2 k 2 plus 2 k 3 plus k 4 divided
+by 6 times h  that is the Runge Kutta formula  So  that is what I want to find out  
+
+So step 1 - you see  I am not going into all these calculations  but I am finding out the value of k
+1  I am finding out the value of k 2 using this value of k 1  k 1 is being used here and I find out
+the value of k 2  Again the value of k 2 is being used here  I find out the value of k 3 and k 3 is
+being used here I find out the value of k 4  I find out those values manually
+
+So  the solution therefore  the theta 0 was 1200  initial condition and here I put in the values of
+this times h  h was 240  So  I have taken it at the midpoint  So  I find that the temperature that
+would be would be 675 65  that is the approximate temperature at 240  So  this will be the value
+at 240  Next I have to find out at 480  So  what would I do 
+
+Step 2  I have taken had half point  I found out now my initial value theta 0 is changing 
+
+Now  again do the same thing - find out k 1 find out k 2  find out k 3  find out k 4  Now with this
+initial condition (using the same function ) what will be h  h will be again 240 because I have to
+find it out at 480 degree temperature 
+
+So  now  I find out that using theta on is now 675 65 that is approximate value that I got earlier
+and I compute this  I find out using the same Runge Kutta method that this is the approximate
+temperature at at 480 seconds which is 594 91 degree Kelvin   This is how we apply Runge
+Kutta method and it’s very useful 
+
+So  the exact solution of the differential equation is 647 57  if I solve it now  we got it  it was
+how much 594 91 and 594 91 
+
+So  it was not very far  It around 50 degree Kelvin  that is certainly an approximation 
+
+So  now we have understood  what is Runge Kutta method 
+
+Now  I want to write a c program for it  Again you might find the approach to be mathematically
+very novel maybe intricate  you may find some initial difficulty in understanding  but I am sure
+you will understand it very fast  but you will see that encoding it as a c program is or as a
+program is really simple  Now you are learning C  in future will be using MATLAB and other
+things  you will be able to solve it very easily  I am showing you the c solution here  On this side 
+I have kept what we learnt till now  y i plus 1  that means  in our case the temperature at 480
+degree  it is temperature at 240 degree plus this and k 1 is f x y  k 2 is f x i  this one f x i plus half
+h plus y i plus half k 1 h etc 
+
+So  now let us look at the program we have got the math function and everything ready  Now
+somehow this function has to be written  Now this function   here its being shown as a very
+simple function  it can be any function  the differential equation function  the earlier functions
+that we have shown or the thelog function which you will have to write  So  here is an example
+of a simple function  x minus y by x plus y  With the dy dx given  that will come in this function 
+So  now  you see here I did how many times  And h value  x 0 x 1 value  all these things I read 
+Now the key things comes here  this is the implementation of the Runge Kutta method  So  very
+simple  you see  I am computing k 1  k one is f x 0 y 0 
+
+So  I am coming to this function computing x 0 y 0  then I am going back computing k 2 for x 0
+plus h by 2  h has been read   This h has been read  then y 0 plus m 1  I am sorry  here it should
+be k 1   this would be k 2  all these m’s you should read it as k  This is k 3    this is k 2 times h 
+So  actually we are computing this thing straight way and then y is assigned y plus k h 
+
+So  it will be this statement will be y plus k h and x plus h  I am incrementing x and going on  I
+am doing it for 2 intervals till I come over here  So  I ultimately come to this print f and I print
+the value of y for a particular x  that is the Runge Kutta  So  this is in a straight way amenable to
+some c program and for each of these f’s  you are calling the function every time  
+
+So  this is the Runge Kutta method for solving a differential equation  So  I will encourage you to
+look at other methods of a integration like Simpsons one third rule which is a very popular
+method  This is known as Runge Kutta fourth order method because we are taking 4 terms  here  but this works very well for most of the engineering problems  So  I will encourage you to write programs on this and later on hence forth  we will move to another interesting aspect that is known as recursion a new style of programming which will take up in the next lecture 
+
+Thank you 
+
+Today  we will be discussing on a new concept of programming which is very interesting  but
+possibly not very much familiar to you  That is known as Recursion  You know repetitions  how
+they are implemented in C programming  Whenever I want to do a particular work 
+
+For example I want to add 10 numbers  then I add the sum with sum plus sum a i with i equal to
+1 and then I repeat it i plus plus and I go on repeating it and this repetition is done in the form of
+a for loop or while loop 
+
+Now  recursion is a different way of doing this  When a function calls itself  that means  a
+function  a particular function will have some inputs and we will deliver one output  Now you
+know nesting of functions that in order to achieve this objective of taking these inputs and
+
+delivering these outputs  a function could call other functions from another function and then
+ultimately  return to this function which could be done and this was known as nesting 
+
+But recursion is a little different  here there is a function which is supposed to be to deliver some
+output  Now in order to do this  it is actually repeating itself  that means  let me give you an
+example  Suppose  I have a machine which can generate 1 apple  it can generate 1 apple  produce
+1 apple or maybe let us say  it produces a vending machine which can deliver 1 coke  alright  1
+piece of coke or1 can of coke 
+
+So  you put in some input some commands and it gives you 1 coke  Now  it has been asked to
+deliver 5 cokes  So  how can you deliver 5 cokes  It can deliver only 1 coke at a time  So  as we
+know in our knowledge of iteration  this is some function  function is delivering coke  So  it can
+be repeated  this switch can be pressed  there is a switch  it can be pressed 5 times  So  first  1
+coke comes out  second coke comes out so  that means  this is being repeated 5 times 
+
+So  that is the conventional way of iterating  repeating the same thing in order to get the 5 cokes 
+Let us try to do it in another way  let us assume that this machine can deliver 1 coke at a time 
+but it can also clone itself  So  let us see how it looks like 
+
+So  I need 5 cokes but I can deliver only 1  So  I can deliver only 1 coke but I will not deliver it
+till I am ensured that all the 5 cokes are deliverable 
+
+So  what it does  It clones itself makes another one copy of itself say and activates - this using
+which I can deliver one coke  So  I asked him to give a 4 cokes  Now this one can also deliver
+only 1 coke and finds that ok  I cannot deliver everything  So  I keep 1 coke ready  but I cloned
+myself and another copy  I activate him - this machine and say please deliver 3 cokes  but it
+cannot also deliver 3 cokes  it can deliver only 1  So  nothing is being delivered  but only kept
+noted  So  it puts somebody another clone please deliver 2 cokes  I have got 1 
+
+So  it is also not delivering because it is not being able to satisfy the request of 2 cokes which has been opposed by this machine  So  it now comes to another clone  So  asks this clone please
+
+deliver 1 coke  Now as you know this machine can deliver 1 coke  So  now  it delivers 1 coke
+and tells ok  I have delivered  Now this one  then since it has delivered  it delivers the other coke
+which it could do   it also tells it’s requestor  its earlier version that I have done my thing  you do
+yours  So  what will it do Remember it can only deliver one coke at a time 
+
+So  it will deliver another coke  it passes on to its caller or its generator that I have delivered  So 
+it delivers the other coke and ultimately this one also knows that it’s child has delivered the coke 
+So  ultimately we get 5 cokes  This was one this is one way in which if each of this function 
+each of these blocks  although they are the same function is being activated with different
+requests and they are waiting till the request can be fulfilled 
+
+But in the meanwhile it is passing on the request to another one and as soon as this could fulfil it  it passes it on and then it goes back  In the case of iteration what would have happened  5 cokes would be generated by calling the same function  So  if I call each of these as functions  then there is no difference between these function  the only difference is the value with which it is being called and this process is successful because ultimately there will be a situation when this function of this machine will be able to deliver what it has been asked to- deliver 1 coke  So 
+that will be done 
+
+Therefore  we can go back and have everybody else deliver the same thing  this is the principle
+of recursion  I just used it as a fun example  but let us now come to a little more serious look at
+this 
+
+So  it is a process by which a function calls itself repeatedly  either directly like X is calling X or
+cyclically in a chain like X is calling Y  Y is calling X basically used for repetitive computations 
+So  the best thing is you look at this example  All of us know that factorial 5 is nothing  but 5  4
+times 4  times 3  times 2  times 1 
+
+Now  you see the same thing  I can say  what is this part  4 multiplied by 3 multiplied by 2
+multiplied by 1  this is factorial 4  So  you see I am expressing factorial 5  factorial function in
+terms of itself  5 times factorial 4 and factorial 4 can again be expressed as 4 times factorial 3
+and factorial 3 can be expressed as 3 times factorial 2 and factorial 2 and be expressed in terms
+of factorial 1  So  5  4  3  2 and factorial 1 is the end  So  that is 1  So  I am certainly getting the
+factorial there without any further expansion 
+
+So  we can write in general factorial of n is n times factorial of n minus 1 and factorial of n
+minus 1 will be n minus 1 into factorial of n minus 2  factorial of n minus 2 will be n minus 2
+into factorial of n minus 3  In that way it will go on  but it will be successful only if there is a
+terminating point where which we often call the basis condition  I hope you have understood
+this 
+
+So  two conditions are to be satisfied   in order for us to write a recursive formula  One is - it
+should be possible to express the problem in the recursive form just like factorial n is n times
+factorial n minus 1 and also there is another point that is the problem statement must include a
+stopping condition  what was my stopping condition in the case of factorial  Factorial 1 is 1 
+
+So  that was the stopping condition  what was the stopping condition in the example of
+delivering the coke  When the machine was asked to deliver only 1 coke  then it can complete 
+So  that is a stopping condition and then we go back 
+
+So  the stopping factorial n is 1 if n is equal to 0 or n equal to 1  otherwise  it is n into factorial n
+minus 1 if n is greater than 0  So  ultimately  it will go on and ultimately  it will conclude 
+
+Another example  greatest common divisor  we can express that in a recursive form  it is very
+interesting  you can look at it that the greatest common divisor of the same number is itself that
+is the key to the logic  GCD of m and m is m and GCD of m and n is GCD of m minus n and n or
+the other way  So  for example  GCD of 15 and 5 also 75 and 15 will be GCD of 60 and 15 
+GCD of 60 and 15 would be for GCD of 45 and 15  GCD of 45  15 would be GCD of 30 and 15 
+GCD of 30 and 15 will be GCD of 15 and 15  Now I have got the stopping condition that GCD
+of the same number will be 15 
+
+So  my result will be 15 is it clear  So  that is a recursive definition of GCD  So  most of the
+interesting problems can be expressed in the form of in the recursive form and that helps in
+writing a very second and tight code 
+
+Here is another example of recursion Fibonacci series - a series like this one  then one  then 2  2 is what the sum of the previous 2 elements 1 plus 1 and 3  what is 3  3 is the sum of the previous two   2 and 1  then 5  what is 5  5 is the sum of the previous two 
+
+Then 8  what is 8  8 is the sum of the previous two  5 and 3  then 13  what is 13  13 is the sum
+of the previous two  8 and 5  then 21  what is 21  21 is the sum of the previous two  13 and 8 
+you can see how nice this pattern is  Can you think of how we can write it in a recursive form 
+how we can express it in a recursive form  If you think a little bit  it will be very easy  it will be
+something like Fibonacci number of n is Fibonacci of n minus 1 plus Fibonacci n minus 2 
+
+So  n 21- this one  is the sum of the earlier 2 Fibonacci sequences  Now f n minus 2 will be what
+will be f n minus 3 plus f n minus 4  Similarly  f n minus 1 will be f n minus 2 plus fn minus 3 in
+that it will go on  but when will it stop  The stopping condition is that Fibonacci of 1 is one  We
+will see that 
+
+So  if we try to express it in the recursive form  it turns out to be Fibonacci of 0 is 1 
+
+That means the first element is one Fibonacci of 1 is 1  There is a second element  then Fibonacci
+of n is Fibonacci of n minus 1 plus Fibonacci of n minus 2  So  now  suppose I give you
+Fibonacci of 5  how do you write that  It will be Fibonacci of 5  it will be Fibonacci of 4 plus
+Fibonacci of 3 and Fibonacci of 3 will be Fibonacci of 2 plus Fibonacci of 1 and Fibonacci of 1
+we know is 1 
+
+So  I know this and then Fibonacci of 2 will be Fibonacci of 1 plus Fibonacci of 0  I know that
+this is 1  So  I get this  this is done  Similarly  once this is done I got this number  So  what
+would that be  This will be 2 and so third one will be 2  then Fibonacci of 4 will be 2 plus 3  5 
+in that way it will go on  Now we see  how we can write a function  how we can express this
+Fibonacci or this factorial  the recursive expression in the form of a function 
+
+Let us see here  I am writing this  you had seen earlier functions written for factorial  So  you can see factorial n is if n equal to 0  return 1  otherwise return n times factorial n minus 1  So  what will happen  How will this be executed  What will it return  While returning  it will again call this function  again  this function will start in the same way just by replacing n with n minus 1
+and here  it will come out with n minus 2  So  it will again be called with n minus 2 and so on
+and so forth It will go on  Now how is that executed 
+
+The function as I said is not executed immediately  when I asked that coke machine to deliver 5
+cokes  it did not deliver immediately  it could deliver 1 coke  but held it back  but created another
+machine to deliver n minus 1 cokes and that machine held it back and generated another machine
+to deliver n minus 2 cokes  In this way  it went on  They are kept aside on a stack one after
+another until the stopping condition is encountered  So  it remembered that I have to deliver one 
+
+So  if you look at this  I do not know whether that will visible or not  Here here you see
+everybody remembered that I have to deliver  but they did not deliver  when the stopping
+condition was met after that this back chain started  So  they are kept aside  but not delivered
+immediately  Then the function calls are executed in reverse order  Again you can see that they
+are executed in reverse order in order to get the solution 
+
+Say I am calculating factorial 4  first the function calls will be processed  Factorial 4 is factorial
+4 times factorial 3  then factorial 3 is 3 times factorial 2  factorial 2 is 2 times factorial 1 
+factorial 1 is 1 times factorial 0 and factorial 0 is 1 
+
+Now  the actual values will return in the reverse order  1 into 1 is 1  So  factorial 1 is complete 
+So  1 into 2 is 2 that goes here  fact 2 is 2  in that way  it goes on  So  it goes back in this
+
+direction ultimately  we get the result from here  So  the actual values return in reverse order  So  factorial 0 is 1  factorial 1 is 1 times 1 is 1  now the reverse order is being done 2 into 1 is 2  3 into 2 is 6 and 4 into 6  6  24 in that way  it is being computed 
+
+So  here is a stack  Stack is a data structure  stack is a way of storing data where we stored the
+data just where whatever comes in first  obviously  goes out last because if I put something here
+and above that I put something just like a stack of books  you will have to take it out in the other
+way  this one will come out first then this one will come out then this one will come out  So  let
+us see how it works 
+
+So  factorial 4  factor step 0 executes factorial 4  Now return 4 times factorial 3  you see here is
+the recursive call  it is calling itself return 4 times factorial 3  what is factorial 3  oh you do not
+know  what is factorial 3  Return 3 times factorial true 2  Oh you do not know  what is factorial
+clue 2   Then return 2 into factorial 1 or you still do not know  what is factorial 1  Return 1 into
+factorial 0 and so  now  you know factorial 0 is 1  So  you get 1 and now you could not answer
+these questions earlier so I have broken it down and given you an easier solution 
+
+And so  now  you go back here and you return one into one then you go back here  return 1 into
+2  return 2 and you go back here   This is what is meant by recursion if we redo it if we 
+
+So  here is the computer implementation of that factorial if n is less than 0  return 1  return n
+times factorial n minus 1 
+
+So  computes 5  So  it is again recursively expressing itself f 4 is being expressed in terms of f 3  everything is being expressed  f is being expressed in terms of f  f 3 is being expressed in terms of f 2  f 2 is being expressed in terms of f 1  f 1 is being expressed in terms of f 0 and I know what f 0 is  So  f 0 is 1  So  I go back and I know that now f 0 is 1 
+
+Therefore f 1 is 1 into 1 and in this way  I go back  Now  you see it had expanded in this way 
+Now it is shrinking 1 into 1 is 1  So  now  I know factorial 1  So  this will shrink  now I know
+what is factorial 2 that is 2  So  this will shrink 3 into 2  6  it is shrinking coming here - 24 and
+then here it is 120  that is how as if in a spring it got expanded and then it contracted back  this is recursion return it ultimately returns factorial 5 to be 120 
+
+Another example will be Fibonacci number  We will explain it in the next lecture 
+
+So  we are looking at recursion and that is a new style of programming where we can express a
+particular function in terms of itself like I can express factorial n in terms of factorial n into
+factorial n minus 1 ok  Another very common example and easy example of recursion is
+Fibonacci numbers  we have already told you  what Fibonacci sequence is the Fibonacci
+sequence can be expressed as f 0  the 0th Fibonacci number is 0  The next one is also 1 
+
+And henceforth  all other ones are sum of the previous two  so  0  1  1  2  3  5  8  13  21  so and
+so forth  Therefore  we should be able to define it in terms of a recursive function because you
+can see this function f and this function f are the same  only variations are in these parameters  I
+am expressing the same function in terms of these parameters  So  the function definition will be
+is very simple f  int end some integer  if n is less than 2  then return n if n is less than 2 if it is 0
+then 0 
+
+If it is 1  then it is 1  otherwise what did you return  Return f n minus 1 plus f n minus 2  sum of
+the previous 2 Fibonacci numbers  Now this is interesting because again if you see how this will
+be computed  it will be first expanding what are the things I have to compute and when it meets
+stopping condition then it starts collecting back and comes back 
+
+If I want to compute Fibonacci of 4  how many times will that function be called  Let us look at
+the expansion of this  So  how will it happen  I want to compute Fibonacci of 4 which is
+Fibonacci of 3 Fibonacci of 2  these 2 should be added  So  I have not yet have found out
+anything  I am just decomposing the problem  
+
+There is a very very important concept that in order to solve the problem  I want to decompose it
+into smaller sub problems  For f 4  I have to solve it by solving f 3 and f 2  Now for solving f 3  I
+have to solve f 2 and f 1  I further decomposed it  Now for solving f 2 I have to solve f 1 and f 0 
+Even now the entire thing has not been broken down  f 2  for that I have to solve f 1 and f 0  Now I have expanded the whole thing 
+
+Now  I know that f 1 is 1  f 0 is 1  So  f 2 will be 1 plus 1  2  this is known  all these endpoints of
+this structure are known - 1 0  1  1  0  1  So  I go on adding them and ultimately  I will get f 4 
+Now it is in a way inefficient  because the same thing is being computed repeatedly  but to a practiced programmer  it will make your programming much more easier  I mean less line lines
+of codes if you can express it in a much better way 
+
+So  you can see here  how many times the function was called  1  2  3  4  5  6  7  8  9 times  9
+times the same function was called in order to compute f 4 
+
+Now the stopping condition of the base condition is very very important  So  if n is 0 or n is 1 
+then I return 1  this is the base case  unless I reach at this point  I will not be able to compute the entire solution 
+
+Return Fibonacci of n minus 1 plus Fibonacci of n minus 2 - that is the code for the Fibonacci
+number  Now whenever I will have too many calls in that case  I should avoid them as much as
+possible and  So  what is the difference 
+
+Between recursion and iteration  In iteration there is an explicit loop for i equals 0  i less than
+equal to n minus 1 i plus plus 
+
+So  there is an explicit loop whereas  in case of recursion  it is repeated function calls 
+Termination iteration if the loop condition is no longer satisfied while this condition do  if that
+condition fails  then we come out of the loop  In the case of recursion  the base condition must be recognised whenever we are getting the base condition  factorial one or factorial 0 Fibonacci of 0 or Fibonacci of 1 
+
+So  those are the base conditions  if wrongly programmed both can have infinite loop  So  the
+performance wise iteration often gives faster result  but it is a good software engineering practice to gradually get accustomed to recursion as you do more and more programming  you will see that you will be able to express the things in a much subtler way 
+
+So  whenever there is a performance issue try to avoid recursion  it will require additional
+memory also  There is a particular type of storage that is required in recursion that is known as
+stack  Stack is a last in first out type of structure 
+
+Briefly  let me tell you  how this thing is done because stack is nothing  but a structure where we
+can push in data from one side - say I put say 5 first  I push  So  5 comes here  then I push 4  then
+I do n minus 1  3 is pushed  then 2 is pushed then n minus 1 again and 1 is pushed  Now when I
+take out the data  the data will come out as 1  then 2  then 3  then 4  then 5 in the reverse order  
+So  the 2 operations are push and pop 
+
+Popping out from the stack and pushing inside the stack 
+
+So  this stack data structure becomes very handy for implementation of function recursive
+functions  we will show some examples 
+
+Like here for example  I want to compute the gcd of a b  Now typically what happens is I call
+this  gcd is computed I return 
+
+Now  here when I call something say  I was here  my program flow was here I went in  So when
+I went in all the local variables and everything here were stored and I had to remember where I
+will be returning back  So  all those things are stored in the stack and without a stack data
+structure  it is very difficult to implement recursion and for that matter any function call 
+
+So  you see here is a function and so all those return addresses are stored  before call this stack
+was empty  now after its returning it is taking out from the top of the stack and again I come to
+know where I was 
+
+So  that is so  similarly you see here  N choose r a b  that means  n c r   n choose r  if I compute 
+then n choose r is factorial r divided by factorial of n minus r or some people write it in this way
+- factorial of n minus r  So  how did I do that  So  how can I implement it 
+
+So  here n c r has been called from here factorial has been called and then where do I return  I
+have to come here  ultimately I have to return here  So  I should not lose the path 
+
+So  what the stack does is when I make the call the first call the local variables here will be
+stored here on the stack and again I make another call from here  So  local variables are there  I
+am calling fact  as I go in here  the local variables here has stacked up and then when I return this part will be taken out and passed on to this 
+
+So as it returns this part is taken out and I am here  it can again continue and then it returns 
+when it returns here this part will be taken out  
+
+So  that is for normal function call  how the stack remembers where I should go back  In the case
+of recursive calls what happens what we have seen is activation record gets pushed into the stack
+when a function I will call is made  In recursion a function calls itself 
+
+So  several function calls are going on with none of the calls getting back  So  all the activation
+records are collected  So  you need not delve into that too much 
+
+I will show it by an example of a computing factorial  So  an activation record is the local
+variables and the return value  what the function should return and where it should return 
+
+So  that with that say the main function is calling fact 3 and here is a fact n  if n equal to 0 return
+one otherwise n times fact n minus 1 
+
+So  main calls fact  So  when it calls the value n is equal to 3 so there is no return value  the
+return address is in the main I am remembering that  Next again fact is calling itself  so  now 
+fact is calling fact 3 is calling fact 2 and my return address is fact  So  you see it has been stacked up  Next fact 2 will call fact 1  so what is this  The stack is growing and its return is in fact 
+
+Now  next time  it will be fact 0  Till now  there was no return value  Now the return value is 1
+and return addresses fact  So  as I do that I return  then I have got a return value because now I
+have come to this point  So  1 into 1 will be 1 and I am returning to fact  as I return the stack will
+contract and what is the return result  2 times 1 that is 2  that is a factorial 2 and I am returning
+to fact  So  I return again  Now I am coming for last time in the fact with n equal to 3 that started
+here 
+
+So  and the result is 6  Now I return to main  So  at every stage look at this  I know I remember
+from where I started and from where I am returning back  nothing is lost using this stack  So 
+stack is a very interesting data structure  that helps us in many ways  especially in implementing
+things like recursion 
+
+So  one assignment that I am leaving to you do it yourself  trace the activation record for the
+following version of Fibonacci  Please note down the code include stdio dot h  int f  f is the
+Fibonacci function  a and b if n is less than 2 return n  if it is 0 then return 0 
+
+If it is 1 return 1  otherwise a is fn minus 1  b is fn minus 2  I have done it in a different way  fn
+minus 1 and fn minus 2  So  if n minus 1 has to be solved separately and fn minus 2 should be
+solved separately  then we will return a plus b  then the main will print  So  just for fun you try to
+draw the activation record of this version of the function  please note it down  take some time
+and note down this function and you see on this side I have shown 
+
+How the activation record will look like local variables  you can see n  a and b  Return value you
+have to keep whether it is in Fibonacci or in main  either in main or in x or y    This is x and this
+is y  alright not these 2  these are not aligned properly 
+
+Here is the return to the main  either return to main or to x or to y and what is the return value 
+Draw the activation record of this and then  we will see how much you could do it I am sure you
+will be able to do it  So  today we have learnt a new style of programming that is recursion and also we discussed in the last class  So  recursion is a type of writing functions where the function calls itself and that makes many functions to be written much more subtle and that is a very good software engineering practice 
+
+Although as a beginner  If you find difficulty in that  you need not bother too much about it  you
+have got iteration at your disposal and you can solve most of the problems with iteration 
+practically all the problems  you can do  May be in some cases  it may be a little more difficult to
+write  but ultimately it is will be possible  So  if you find difficulty with recursion  you can set it
+aside for the time being  but we have to discuss it because that is a very nice way of writing
+functions  we will continue with the concept of structures in the next lecture  a new thing will be
+introduced that is called structure 
+
+Thank you 
+
+Earlier  we had talked about storage of data in arrays  Now  what we found  what we mentioned
+in the case of arrays is that in an array we can store data only of a particular type  say an array of integers or an array of floats or an array of characters  but we could not mix different types in the same array  For example  we had faced the problem of representing the student’s database where we will have the student’s name as well as the student’s marks 
+
+So  we needed something like this  actually that is what was desired  that will have the names
+here and the names will be nothing but an array of characters  So  here will be some names ABC and here will be the marks 56 A  Now this representation requires two arrays  one is the
+representing the names and the other is representing marks  
+
+Now  however  as the diagram is showing here  we are trying to represent them in an unified
+structure in the same structure  but that is not possible in the case of an array  here we have got 2
+
+different data types  This is an array of characters and this is an integer  For example  we can we can see that if I had stored something lets say  
+
+For example  I want to store a graph where at every point  1  2  3 seconds for example  this time
+in seconds and here I am measuring the temperature and if I have a graph which is something
+like this  I cannot say that at every point  the temperature will also be an integer therefore 
+
+So  suppose here at point number 2  the temperature is 50 34  at point number 3  the temperature can be 70 2  So  if I had tried to represent that in the form of a 2D array  in that case  it wouldn’t have been possible because a 2D array is also an array and therefore is of only one type  We have to declare a 2D array as an array of integer or as an array of characters or array of float 
+
+So  I cannot represent that in a 2D array where one side say for example one column will be
+temperature and another column will be the time  its time and temperature  So  that wont
+possibly be executed in a 2 dimensional array because while time will be an integer (1  2  3)
+temperatures can be something different 50 6  70 3  etc  So  an array is not possible 
+
+So  our question is then what is the type of data structure  what is the type of arrangement by
+which I can represent data of different types together   The answer to that is what we will be
+looking at today that is structure  Structures in C allows us to represent a combination of
+different data types 
+
+For example  let me give an example of a structure  say I want to define student data and student data will consist of the student name  lets say the department of the student  roll number of the student  may be the CGPA of the student  grade  point  average of the student  etc 
+
+If I want to store them together as a common piece  the student data  then this entire thing has got components of different data types  For example  what will be student name say for example  Amith will be either a string or an array of character  department  somebody can say mechanical engineering that can also be a character string  whereas  roll number 748 will be an integer and CGPA say 7 8 will be a floating point number 
+
+So  what we can see that in order to store the student data we have to have a mixture of different data types  So  a structure allows us to do exactly this where I can consider this student data as a structure  So  let me redraw it in a different way 
+
+So  I draw a box which is representing the student data  I name it stud data and I have got
+different fields in this  Each field has gotten some identification  So  this field is storing the name
+and this field is basically of a type character array  So  another field is name is department and its type is also character array  another field   remember that I every time I am using that term field of student data 
+
+So name  department  what else do we have - role number which will be of type integer and
+CGPA which will be float  Suppose there is no other field  So  we call this entire box to be a
+structure - this is a structure and what is contained in this structure  There are 4 fields that define the structure - the 4 fields are name  department  roll number and CGPA  these 4 fields are defining a structure  Now C allows us to define structures of this type and we learn how we can define such things and let us go ahead a little bit  what is a structure  It is a convenient tool for handling a group of logically related data items here 
+
+Of course  the logically related data items were the different information fields or information
+component that are related to a particular student  So  till now  we saw very simple data
+structures like array  Now here for example  I have got related components - student name  roll
+number and marks or CGPA or for example a real part and imaginary part of a complex number 
+
+For example  if I had tried this  a complex number (all of you know that a complex number is
+expressed as a plus ib) where x is a complex number a plus i b  So  maybe x is equal to 4 plus i 3 
+All of you are aware of that  Now how do I represent I know how could I can represent an
+integer  I know  how I can represent a floating point number  but now the question is  how I can
+represent such a complex number  Now well let me have a structure like this which will have 2
+fields  one is the real part  there is a real part  So  I call it the real part another part is the
+imaginary part and I can store this number simply as 4  3 
+
+So  the imaginary part is 3 and the real part is 4  So  the complex number instead of being an
+integer or a float is essentially a structure  This is another very common and easy use of
+structures  So  whenever I refer to this variable x which is of type complex  I will be referring to
+this structure and neither at 4 or nor at 3  I will be looking at this whole thing 
+
+So  so  it helps us in organising the complex data in a much more meaningful way  The
+individual structure elements that I was talking of which i was mentioning as fields is also known
+as members  Now you will also find other names of structures   So  structures are sometimes
+called records and each of these horizontal boxes that we are drawing are called fields of that
+record or when we referred to it as structures we call each of those smaller boxes as members 
+
+So the composition of a structure can be defined as follows  See in a structure I can put a tag 
+now this is very important  what is the tag that I am putting over here 
+
+Say for example  earlier I was talking of student data  So  my tag could be stud data as I had
+written  So  I have to write struct stud data and inside that I have got several members and what
+where my members  My member was name  my member was roll number  department and
+CGPA  So  I had 4 members  Now each of these were of different types that is something which
+is very important to understand  So  struct is the required keyword I must write  this word -
+struct  This ‘tag’ is the name of the structure like stud data  So  that is a structure  Just as we had
+done for other variables we had done say int x float y  etcetera 
+
+So  here also instead of int or float I have to say struct and what is struct  That is defined  So 
+first of all I have to define the structure  Int and float are defined by default any c compiler will
+understand what int or float is  but if I write struct  then by default the compiler will not
+understand what the structure is because there can be different structure  one structure can be for
+student names  one structure can be for book details - if I had thought of a book detail and
+wanted to store that in a structure  what will be the components  The members will be of course
+the title of the book  the author of the book the publisher year of publication  the ISBN number 
+etc 
+
+So  therefore  each of these members will again be of different types  So  it will be a
+heterogeneous organisation just as it was with the student data  If I want to define books for
+example  I would have to write struct book followed by the definition of the members  So  this is
+equivalent to as if I am drawing a structure and its name is becoming - book and I am defining
+what are the members of this structure  Let us move a little ahead 
+
+So  member 1  member 2  etcetera are individual member declarations  We will see more
+examples of this  The individual members can be of different types and that is the beauty of
+structure  the individual members can be ordinarily variables  pointers  arrays or other structures  it can even be other structure that is very important it can be some variable  just as name or it can be an array - say name was a character array or it can even be a structure  That means  I can have a structure within a structure  So  it is possible that I will have something like this 
+
+One field of the structure is a character array  another field of the structure can be an integer
+variable or another field of the structure can be a structure itself  it can be another structure
+where there are more members inside  that is also possible  
+
+So  that is the beauty and the flexibility that we get from structures  So  the member names
+within a particular structure must be distinct from one another  we cannot put the same name to 2 different structures  Once a structure has been defined individual structure type variables can be declared as (we will see) struct tag variable one variable 2 variable n  I think  it will be much
+more clearer  if we go through an example  let us look at this example A 
+
+First I start with a structure definition - struct student and then I put just 2 parentheses to show
+that there will be some members defined inside 
+
+Now  how do I define the members  I say that one member is name which is an array of
+character  The next one is roll number which is an integer  So  roll number is a variable  I said
+that a structure can field can be variable or can be array or can be another structure  So  here is an example where you have an array and a variable of type int again  total marks can be integer  data of birth can be character and sizes  So  data birth is again of type array character array because the date of birth can be say 10 Jan  2010  So  like that it can be a character array 
+
+So  this is how a structure is defined  Now  I am now defining the variables  I have defined the
+structures here  So  I know once the compiler reads this and finds that well I some definition of
+some variable called student I know that that is a structure and what is the constituent of that
+structure  That will be these fields 
+
+Now this is just a type - just as we had int float  etcetera or char those where data types  Now  I
+am saying that I have got a structure of type this where there are 4 fields  but the data has not yet been put  This is very important though  there are 4 fields  one field is name and I say that is an array of thirty characters and there is a role number roll which is an int  total marks is an integer and date of birth is an array  but you see that there are no data already put inside this array 
+
+Now  we have name variables - a 1  a 2  a 3 are variables of type student structure and what is
+that student structure this is a structure  So  a 1 will just be a copy of this structure and a variable 
+a 1 may have (if I take this) may have some name like amith here  roll number may be 560 and
+total maybe 700 and date of birth can be something  That is one particular instance of this
+particular structure that has been defined This part must be very clear to all of you 
+
+So  I have defined 3 variables a 1  a 2 and a 3 each of type  what kind of type  type structure
+student 
+
+So  type is struct student  We have got these fields as its constituents  so struct student tells us a new data type and these are the variables of the data type 
+
+So  it is also possible to write it in a much more compact form like  So  struct tag and then i write
+struct student and I declare char name 40  int roll no  int total marks char date of birth 10 and
+then I could have put the variables a 1  a 2  a 3 inside this note here  the semicolon is coming
+here that is that is the end of the definition So  here I have done it in a much more compact form
+compared to the earlier one  In this form of course  this tag is optional  (Refer Slide Time: 22:40)
+
+So  what I mean is say I define once again let me give an example to you say a complex number
+I can write that as struct complex and members are int(need not be always int)  So instead if I
+want to store data of type say 4 5 plus i 7 2  then I would need float real  float imaginary and
+
+that is the end of the structure and I can say struct complex x 1  x 2  this is one way of
+representing structure 
+
+What does it mean  It means that I have first defined the structure called complex which will
+have these 2 components and then I defined that x 1 and x 2 are 2 variables of type this complex 
+If I do it in this way I have got an advantage that later on I can define some other variables also y1 y 2 over here or I can also define it as struct float real part 
+
+So that you do not face confusion  let us float real part  float imaginary part and then I can say x
+1  x 2  Note that here  I have not written the thing complex  I have not written it I could have
+written  it would not have affected me  in any adverse way  but it is not necessary to write it over
+here  So  if I write this how will the compiler interpret it Always you should think when
+compiler looks at it what will it think what would it possibly do 
+
+So  the compiler is trying to understand ok now there is no ambiguity because it knows that x 1
+and x 2 are 2 variables of type structure and the structure is defined here itself  I need not give
+any name  but the advantage of giving a name is say I give the name complex here  Here I have
+defined x 1 and x 2  if I had done it in this way I could have later on  down the line in this
+program  have written struct complex say y 1 z 1( its possible  because I have already defined
+struct complex ) 
+
+So  there is a choice over here which you can think of let us go ahead a little bit  So  in this case
+the tag is optional 
+
+So  here is an example we will conclude this lecture with this example  So  struct student
+character name thirty  int roll number  int total marks  character data birth 10  a 1  a 2  a 3  that
+means  a 1  a 2 and a 3 are 3 students  3 pieces of student information or I could have done it in
+the way I have just now shown  the same thing without giving any tag over here  these are
+equivalent 
+
+Now  next lecture  we will talk about how do you process a structure that will come in the next
+lecture 
+
+So  in the last lecture we had seen how a structure is defined  Now we will see more examples of that in this course  So  today we will be concentrating on how a particular structure can be
+processed  In order to process a structure  we can we have to process every field of the structure 
+We can operate on every field of the structure 
+
+So  we can see that a structure how can we access the member of a structure  Say for example 
+there is a variable like name  So  we can say overalls name of the structure is say student all
+right  and in the inside student we have got name  roll number etcetera now I can  So  my
+variable is say all right let me say I have defined like this struct student  then all these then the
+variables are a 1  a 2  a 3 I am sure you are getting confused a little bit 
+
+So  let us define it in the proper way as we are done in the last class  Suppose I define struct
+student  char name 10  int roll number all right suppose only two fields are there and I also say
+that the variable is variables are x 1 comma x 2 these are 2 variables of the type of this structure
+whose name is student  So  what is my variable named  x 1  So  here I can say x 1 x 1 dot this is the dot operator which tells about the member  now which member say I want to get the roll
+number  x 1 dot roll number assign 720 all right  So  this is how I can get access to a particular
+member of a particular structure  So  I can also similarly write x 2 dot name 
+
+Because that members name is name right name 3 is j all right because name has got a 10 field
+character ok  I could have written x 2 dot name and I could have assigned a string to this all these are possible 
+
+So  if this is clear then we go ahead a little bit were variable refers this variable is referring to is
+referring to the name of a structure type variable and member is the referring to the field or the
+particular member element ok  The examples are a 1 dot name  a 1 dot roll number  a 3 dot date of birth etcetera 
+
+So  now here let us take the old example that we had seen that is a complex number and how we
+can perform complex number addition  Now  just to refresh your mind say I have I have got two
+complex numbers x and y and I want to perform x plus y  Suppose x is a plus i b and y is m plus in then x plus y is the real parts are added separately  So  it is a plus m plus i then the imaginary
+parts are added separately  b plus n that we know from our school level knowledge 
+
+Now how can I perform this addition using the concept of a structure  So  here you see in the
+program  we define a structure called complex and there are three variables a  b and c of this
+structure type of type complex all right  Now  what are  There that components are one is float
+sorry I am sorry one is real part  another is I should rename this is actually the imaginary part its
+renamed in this way here in this program it would have been better  if we I had written float real
+part float imaginary part however 
+
+Now  scan f I am reading the two numbers a is a variable  a is real part is being read and a is
+complex part is being read note the format statements because both of them are float we are
+putting percentage f all right  And so  I read a  So  you see normally I would have just done scan f amperes and a  but here I have to do separately I have to read the real part and the imaginary
+part  then the sum is being stored in c 
+
+So  c is real will be c is the sum  So  it is real will be sorry it is a real part will be the real part of
+a plus the real part of b and the imaginary part or the as it is written here complex part is the
+complex part of imaginary part of a plus the imaginary part of b  Then I am printing look at how
+I am printing it  printing percentage f the real part of c and plus then I put j and then the complex
+part of c 
+
+So  what is being done is suppose I have got 2 numbers  3 4 plus here I am using j some people I usually use i or j whatever you do  So  you write 7 2 that is a is real part is this  and b is real part is say 4 6 plus j 3 8 now if I add them c will be these real parts are being added  So  it is 8 0 plus the imaginary part is added that is 11 j 11 all right  So  what will be printed is 8 plus j then the complex part 7 0 
+
+So  this is a I think this is clear to you this not very difficult to understand let us move ahead 
+
+So  you have seen here  if you note here you have got the structure definition specified and here are the very variable definitions  And here we are doing the reading and adding them part by part how am I accessing the members  I am accessing the members using this dot operator and
+whenever I am reading the member I am actually reading the members  I am not reading the
+structure as a whole 
+
+Now  one thing to note is when I am declaring this structure inside the main  then the scope of
+these variables real and complex etcetera or this structure as such is its scope is within the main 
+
+So  if a structure is defined within a function  then as we exit that function the life of that
+particular structure will end at that point 
+
+Now  there are some things which we can do in a much more simpler way  you remember that in
+the case of arrays we could not compare arrays together  That array a 1 is equal to a 2 that was
+not possible  if we had to compare the array I had to check them element by element  On the
+other hand in the case of a structure  a structure variable can be directly assigned to another
+structure variable of the same type  For example  here if a is a structure  then I can assign another
+structure b to it directly 
+
+So  all the elements if they are of course  of the same type  So  here is one structure  here is
+another structure now if I do this operation   that means  assignment then this will be copied
+here  this will be copied here  this will be copied here  this will be copied here all right 
+
+But if a and b where arrays in that case  that would not have been possible that a is an array and b is an array  So  the elements just by assigning a assign b  I could not assign these b elements to a that is not allowed in the case of an array  however  that is possible in the case of a structure 
+
+Secondly now here one important thing is that they must be of the same type all right otherwise
+of course  the members and the fields will not match 
+
+So  a 1 assigned a 2 I can do  all the individual members get assigned  Two structure variables
+cannot be compared for equality or inequality  Now this is important that two structure variables
+I cannot compare them  that structure a 1 whether that is equal to a 2 that will have to do
+compare I mean  what I said just a couple of minutes back was inadvertent that is wrong 
+
+Structures we cannot compare we can assign in a short  but comparison of structures we cannot do as a whole all right  Two structure variables cannot be compared for equality or inequality now for that  what we have to do we can write a simple function say I can write and you can take it as an assignment  that we can write struct comp  struct c m p where you will take 2 structures as input and we will compare them and how do you compare them  We will do say variable a 1 dot member 1 equals to is whether its if it is equal to variable a 2 dot member 1  in that way if you do then it is possible 
+
+So  what we can do here is  I have got two structures and there are 2 variables of the same type
+of the same structure type one is a 1 and one is a 2 and I have got some values here all right  And say this is member 1  member 2  member 3 member 4 like that now in order to compare if I want to compare them what I have to do  
+
+I will have to see if this is a 1  a 1 dot m 1 is this also m 1 is equal to a 2 dot m 1 and a 1 dot m 2
+is equal to a 2 dot m 2 and so and so forth  If I do then return 1 that could be my function   that
+means  if all these are matching  then only I will say that they have been compared to be the
+same otherwise it will return false  So  here other else return false  So  you have to write it nicely
+you can take it up take it up as an assignment arrays of structures 
+
+Now  once we know this  we can now make an array of structure why is that useful let us take
+one problem  Let us say that I am trying to store the information of a class of students 
+
+Where maybe there are say 40 students and their information about each student has got different components  name in a particular class  roll number and say marks total marks  So  marks is an integer let me say  roll number is also an integer and name is a character array something all right  Now that so  this box this can be also depicted as a box having three fields name  roll number and marks  but I want to have that for all the 40 students 
+
+So  I will have 40 such small boxes  each having 3 fields one after another  So  that can be
+represented as an array you know that in an array we can store data of only the same type  So 
+that is not causing any problem here  because each of these boxes are of the type struct students therefore  I can very well consider them to be an array of such structures 
+
+So  if I call this class is this array  then each of these boxes are an element of that array  So  if I
+say class 0  which element am I looking at  This element right  if I take class 0 dot name  then
+which field am I looking at  This particular field  if I write class 2 dot roll number  which field
+am I looking at  Class 2  So  it is an array 0 1 2 you know that just in c any array starts with 0 
+So  0 1 2 I come over here and which field am I looking at roll number roll number is the second
+field  In that way I can access each element of this array  either as a structure or as an individual
+member of that structure all right 
+
+So  in such cases or the same thing could be applicable  if I want to represent a library  So  in that case what will happen  A library will consist of books right  So  suppose it is a small library 
+where I have got a library of 20 books all right 20 books 
+
+So  books is an array of type what or let me let me name it different way  So  I am say in my
+library is consisting of 20 books at most  and what is the type of library when we write in a
+array  We write int a 20 float a 20 like that  So  here what is the type of library  Type of library
+will be struct book  So  because every element of this library  when I write int a 20  that means  I
+am talking of an array where there are 20 elements and each element is of type int 
+
+So  when I am talking of this struct book library 20 what will that mean  That will mean that
+here is an array library having 20 such field 20 such positions elements and each element is a
+structure called book  I have not defined here the structure of book  So  I should have done it
+earlier 
+
+Suppose I do here struct book  char name 10 semicolon that is the name of the book  Char author 10 the author of the book int ISBN and I close that  Suppose this is a structure of the book having 3 fields only I have it could have been more fields number of pages year of publication etcetera I am not showing that  So  each of these elements have got 3 fields here name which is itself an array of 10 characters  author which is itself an array of 10 characters and an integer ISBN number 
+
+So  this is the whole element  the first or 1 element of the array library  And library is an array
+which houses 20 at the most such individual structures  So  if I say library 3 dot ISBN where am
+I going which one I am referring to  0  1  2  3 library 3 and the last element of that this is the
+ISBN number because this is a last one all right 
+
+So  therefore  using structure allows us to store different types of data together  and again array
+of structure is a very powerful facility that has been given to us  using which we can store many
+more things and we get much more flexibility  Let us go here  once a structure has been defined
+like the structure book that was defined we can declared an array of structures  for example 
+struct student class 50 
+
+So  note here that class is an array having 50 elements  So  it is something like this here is class with 50 elements 0 to 49  and what is each element  Each of these elements is a structure of type student must have been defined somewhere earlier 
+
+The individual members can be accessed by class whichever element are you want to have say
+for example  struct student  one field is int roll number  there is a name  there is marks and
+character  So  this is the student and I have got 3 variables a 1  a 2  a 3  The array element within the structure and I have defined an array earlier that is a class of 50 right  So  now  I have got an array of which every element is a structure like this  and the structures are variables a 1  these are also the student variables also my class is consisting of the same structure 
+
+The array element within the structure can be accessed as now you can very easily guess  if a 1
+dot marks 2  Now  here this example is telling us something more  here this example is showing
+that any element of have and a member of this structure student can also be an array  that we had defined earlier this is also an array 
+
+Now  suppose I have got this student a 1 his name is a  roll number is say 1  and marks is itself
+an array where the marks of literature  history geography  maths  science everything is stored and the date of birth is a character array all right  Now so  it is say 07 07 2007  So  that is a character array 
+
+Now  when I am saying a 1 marks 2  that means  I am going to this field is the marks field  I am
+going to the a 1 structure a 1 variable  and I am taking its structure and coming to the marks field or membership member and I am coming to the element 0 1 2 this particular element this
+particular element I am coming to by this  this you must understand 
+
+So  I can have an array within a structure  also I can have an array of structure  Till now what we
+are discussing was and here what we discussed was an array of structure right  And here what we have just now shown you is what we have just now shown you is an example of that an array can also be a part of a structure 
+
+Next lecture we will be talking about a new thing that is that is also very important type def  That
+is very much useful for that facilitates us to create new type definitions and we can write much
+simpler programs with this we will take it up in the next lecture 
+
+We were discussing about structures and in particular we have discussed about the way the
+structure is formed and in that context we have seen that a structure can contain within itself
+some members which can also be a structure themselves 
+
+For example  this one member which can itself be a structure consisting of other members  So 
+this is a structure struct S in which there is another struct say P which is a member of this  also
+some member can be an array  This can be say name 10 char  that means  it is a character array of name 10  similarly it could be some member like int marks 20 
+
+Now  we have seen that we can have arrays within structure also in the last lecture we have
+talked about arrays of structure  So  there is a scope of confusion between these two that is why I want to make it clearer that there can be an array within a structure as a member 
+
+So the other thing is we can have an array of structure  So  in this case we have got an array 
+every element of that array is a structure of a particular type  We know that an array can hold
+data elements of the same type  So  if I have one particular structure defined like say student  it
+can be an array of students  So  each of them is of the type student So  these two must be
+differentiated very clearly all right  
+
+So  as you can see that here a structure member can be an array  we saw it in the last class last
+lecture that say for example  a structure student has got an array char  character array name
+thirty  all right  this is a part of an array  Now we know arrays within structure and we have also
+seen arrays of structure  where we can have a number of elements of that particular structure 
+
+So  here we have seen that we have got a an array class  the array is class which can hold up to 50 elements and each element of this class is a structure of type student 
+
+When I come to say class i  then I am actually accessing a structure a particular structure in that
+array  Now that structure has got number of fields therefore  if I have class i dot name  then I will
+get a particular name (if that be the field) or I can say class 2 dot roll number 
+
+So here there is an array of structures and we can handle them just as in this case where the index is pointing to the particular element  and then by dot operator we are going inside that element and looking at that array 
+
+Whereas in the case of an array within a structure we look at that in a different way  suppose if I
+come to the structure  student and suppose there is a variable of variable of name say a 1 as of
+type student  then I can say a 1 dot name and I can take a particular character of that 
+
+So  look at the difference of this  this is one and the other one was class i dot name j  So  here I
+am accessing the particular element from that structure  and here I am coming to the structure
+and going to that array element within that structure  So  this is an usual point of confusion
+among many students that is why I was repeating this 
+
+Next we will start looking at an important style of writing programs which is typedef 
+
+That facilitates our programming with structure  As the name typedef implies  we are defining
+some type  We know that int is a type  float is a type  data type char is a type etcetera  Now  I can also define my own type which I will be using in my program using this typedef command 
+
+So  we may define a structured data type using a typedef command like this  let us see the
+syntax 
+
+The syntax is I say typedef struct member variable 1 member variable 2 member variable n and
+then some tag  Tag is the name of the new data type  Let me illustrate this by differentiating this
+with the earlier thing  Earlier we had written something like this struct student 
+
+Then char name 10 int roll number  So  I was defining a structure in this way  and I was later on
+referring to the structure as struct student say student 1  student 2  in this way  Now  what I am
+trying to do here is  I am trying to define a type  suppose I do not write this  what I am doing
+instead I am saying typedef struct same thing char name 10  int roll number and naming this type
+as student  If I do this then next time when I declare the student 1 and student 2  I will do it in a
+different way I can do it much simply  See how I am writing now  in the red box 
+
+If I just simply write student  student 1 comma student 2 that is sufficient  Compare this with the
+way we had declared int x float y  So  here int and float were some types  now here student 1
+student 2 are two variables of type student  Now  this type is not a default type it is not pre-
+
+defined in c but I can use it because I have been already using this typedef statement has defined the structure as student 
+
+But please differentiate between this and the normal definition of the student as we do normally 
+Say struct something and then I say student  I say struct (we have seen this) and I write the
+members here and then define that structure as the type student  Now this is a definition for a
+particular structure as student  Now this  if I have to use it then I have to say struct student
+followed by a 1 a 2  student 1 student 2 whatever  But in this case if I do this typedef  I am saved from this problem  So  let us have a little look at how we will go about it 
+
+So  that is a tag  So  here typedef a particular structure  just like here it could be char name or int  roll  note the semicolon at the end of if all this declarations  ultimately I name this tag semi say for example  here as student  So  tag is the name of the new data type 
+
+So  given that here is an example of complex number  So  we are defining a type called complex  ignore this 
+
+So  typedef something having real part and an imaginary part is known as a data type complex
+and then I am saying complex a b c just like int a b c  float a b c  I can write complex a b c
+because complex has already been defined here 
+
+Because complex has already been defined  so  I think this is clear right  
+
+Next we move to  how do we initialise a structure   We saw that we can initialise an array
+similarly we can initialise a structure as well  Say a structure variables may be initialised
+following similar rules like an array  The values are provided in a within the second braces
+separated by commas for example  here complex a 
+
+Complex a  is a complex variable 1 0 comma 2 0 what does it imply  It implies that ‘a’ is a
+structure having two fields and one field is 1 0 another is 2 0  Similarly b is another field  which
+is initialised to minus 3 0 and 4 0  Just as we did it in the case of arrays  we do it for individual
+structural variables here  but you have to put all the values initial values for all the fields of the
+array (Refer Slide Time: 16:12)
+
+So  this is what happens through this initialisation 
+
+The last thing that we will be talking about is parameter passing in a function  How do we pass a
+structure as a parameter to a function  We have seen how arrays can be passed similarly how can we pass structures to a function like any other variable   Just like any other variable we can pass it like for example  here you can see that there is a swap between complex variable a and
+complex variable b  Now  a and b are both structures  So  I am saying just as we use to write void swap int a int b just like that  here I write complex a complex b  It is also a call by value  Now so  here is again the typical assignment 
+
+So  here is an example program using typedef  What is being done here is I am defining a type
+complex  typedef struct - they are two parts real and imaginary and this data type is known as
+complex  Now I am writing a function swap   So  I am taking another variable which is of type
+complex  tmp is of type complex  So  when I do assign a to tmp  then this tmp variable which is
+of type complex will copy the variables (say here it was 3 0 and minus 2) so  this will come here
+it will become 3 0 and this will become minus 2 
+
+So  that is tmp  Now I copy b to a  I am sorry not this one  there was some b and the values of b
+are copied to a   not here  these are copied here and here  So  it might be that this is changed to 5  this is changed to minus 2 5 and then I copy tmp to b  So  this is again copied back  So  member by member the copy is done  So  here we illustrate what you mean by typedef and a function that is using it 
+
+So  now suppose how can we print a structure  Say here is a function  the main function is
+calling print x and print y  So  say for example  my main function is initialising (now you
+understand all this things) x to 4  x real part to 4 imaginary part to 5 right and y’s real part to 10
+and imaginary part to 15  So  now  I am calling print x  So  it is calling print x  So  x is being
+copied call by value to another local variable a  which is local to this function print  So  a is
+holding the complex variable x and print f a dot real a dot imaginary 
+
+So  field by field I print them  Then I come back I print y  Y is copied to a and the same thing
+happens  then I call swap  Now  swap as a function that we just now saw where we take tmp and we copy it to tmp  and then I copy b to a  and then tmp to a in that way we carry out the
+swapping 
+
+So  it is purely call by value and then I print x and print y  After I swap  what will happen in this
+case  If I go back to this case  where I am passing among this a and b  the x and y are being
+swapped inside that function  but will that be swapped in actuality  You check that yourself 
+
+How do we return a structure from a function  Suppose I have done something  but in this earlier case where x and y were being swapped inside the function  but when I come back to the main my x  y remains the same  So  if we if we want to return the function for example  here  I carry out a real plus b real (I make it tmp)  So here is an example of adding two complex numbers  here complex a and complex b are two variables which have been passed on as parameter here  and I have got a tmp as a local function  a local variable 
+
+So  tmp dot real is copping a dot real plus b dot real  So  what is happening  Here I have got
+structure a with a real part and an imaginary part  So  3 0 4 2 another is b which is 2 5 and may
+be 3 6 
+
+Now  when I am adding two complex numbers  you remember we discussed it in last class also  I first add this two  So  a real is added to b real  So  this is tmp where I am getting 5 5 and then
+imaginary I am getting 7 8 and now I return tmp 
+
+Now in the main function if I had written something like say x and y were two complex
+variables  and what I did was I added x y assigned to some other complex variable z  in that case
+
+this tmp will be assigned to this complex variable z  that is how we can return a structure from a
+Function 
+
+So  structure facilitates us in many ways but direct arithmetic operations are not possible with
+structure variables  that means  I cannot just add a and b when both of them are structures  I have to do the arithmetic operations over its members  So  with that we conclude our discussion on structures and you will be given assignments on structures  and this will enable you to write
+different types of handle different types of data types together and using the typedef  you can
+design your own complex data type which you can utilise further 
+
+So  please practice using structures it is not at all difficult  only a little practice and a little
+understanding is required 
+
+Thank you 
+
+In today’s lecture we will look at very important concept of programming  it is required to
+conceptualise and understand this thing very well so  that you can have more flexibility with
+programming  We have visited this idea the concept of pointers  earlier in the context of our
+discussions of call by value and call by reference 
+
+So  if you recall at that time  we had we had talked about the variables  which are in the memory
+right  
+
+So  suppose I am talking of a variable - x y z is the name of a variable  So  that variable has got
+some address  that address maybe say 5000 in the memory and who has allocated this address 
+That address has been allocated by the compiler 
+
+Now  if I have another memory location  say a part of this which I am just drawing separately
+whose address is say 7000  Say this one - 7000 and inside this location 7000 as it’s content  I
+write 5000 and I say that whatever is the content of this location 7000 that is the variable I am
+interested in 
+
+So  can I say that if I now give a symbolic name p to this 7000 or say this is p  that this p is
+pointing to x y z because p is containing the address of x y z  Therefore  p is a pointer to a
+variable x y z  Right now p is pointing to x y z  but if I just change the value of this location
+7000 and make it say 6000 then it will probably point to some other location here 
+
+So  p is therefore  a pointer variable  but when I say that it is a pointer variable  then it is not
+pointing to any particular data  it can point to a type of data  So  instead of making this statement that p is a pointer variable to a variable x y z  Say this one is p q r now as I change this  now p is a pointer variable to a variable p q r 
+
+So  if I generalis it lets say that in this situation where I have got x y z at 5000 and p q r at 6000
+and 7000 is a pointer p then I can say p is a pointer variable pointing (say x y z and p q r who are both integers) to an integer or it could be a float or it could be a some other data type  So  pointed to a particular data type  Why I specify the data type will be clear in some time from now  The most important concept here is that p is a pointer  p is a variable and variable is holding some value and that value is nothing  but an address of another variable all right address of another variable 
+
+So  now let us look at this the basic concept  every stored data items occupies one or more
+memory cells  whenever we declare a variable the system allocates memory locations to that
+variable  we know that very well  so  need not spend more time on that  Now this is important 
+you already know that the number of memory cells required to store a data item depends on its
+type  typically for char we need one byte  for int we need two bytes  for float we need four bytes
+etcetera 
+
+So  since every byte in memory has an unique address  this location will also have its unique
+address  Every element will have a unique address 
+
+So  let us see here the same example  consider the statement int x y z assigned 50  This statement means that the compiler will allocate for this x y z some location and put the value 50 in that location  Suppose the address of x y z is 1380  Here x y z is a variable and 50 is the value and
+1380 is the address of that variable we know that  we have discussed it earlier 
+
+Now  during execution of the program  when the program is being executed the system always
+associates the name x y z with the address 1380  So  whenever in the program we find x y z  the variable x y z being referred  it will go to the memory location thirteen eighty and fetch that  So  the value 50 can therefore  be accessed by going to the location 1380 and accessing it  Now  the variables which are holding these addresses are known as the pointers  Now  memory address is just numbers 
+
+So  I can also store them in some variables and these variables which are for example  the
+address of the variable that will hold the address of variable x y z is the pointer to x y z  So  it is
+also naturally stored in some memory location 
+
+So  this is just the example that I was discussing right now  Suppose we assign the address of x y z to a variable p  then p is said to point to the variable x y z 
+
+I was comfortably drawing this that there is 5000 here  x y z and 5000 here and I was simply
+saying that this variable which was in location 7000 was pointing to this   that means  this was
+being loaded with 5000  How is that being done  How is 5000 being written inside this location 
+The statement is just like any other assignment  It will be that these variables name is p  p is
+assigned the address of x y z  So  p assigned and x y z 
+
+Here we can see that the variable x y z is the address is 1380 value is 50  P is a pointer variable
+whose value is 1380 because it is pointing to x y z 
+
+In our diagram that I was drawing by hand  this p was holding the value 5000 and its address
+here is say 2545  in my diagram it was 7000  So  this is a picture 1380 is the address of 50 and p which is located as 2545 is holding the address 1380  Whenever you find difficulty in dealing
+with pointers my suggestion to the student is to draw a piece of diagram and then make the
+whole picture clear in front of you 
+
+Now you know that if I put the operator and  ampersand immediately before the variable it will
+return the address of the variable and x y z will give me the say the value 1380  which is the
+address of x y z 
+
+The address of x y z is assigned  This operator ‘and’ can be used only with a simple variable or
+with an array element  For example ‘and’ distance  ‘and’ x 0  that means  the address of the first
+location of the array x and of x i minus 2 
+
+Now what is illegal  This is illegal  the reason is obvious  Two thirty 5 is not a variable it is a
+constant 
+
+So  it does not have any fixed position in the memory  So  it is not a memory location therefore 
+it does not have address so its meaningless  Pointing to a constant is not possible  I cannot say
+and arr  because this shows that arr is a particular variable  but it is an array therefore I cannot
+show it like this  it is just pointing at an array name  it is not pointing at the array 
+
+We cannot also do this and a plus b - that is also not possible because(Refer Time: 12:19) if I
+have a as some value and b has some value then I add them and it will be a value and a value
+does not have any address  that is pointing at an expression 
+
+So  here is a quick example I think I had shown this to you earlier say I have got a number of
+variables - one character  one double  floats  I am assigning some values to these  here I am
+putting some values  and print f a particular variable ‘a’ is stored in the address anda b is stored
+in address andb  c is stored in address andc so and so forth therefore  if we run it  we will get the addresses 
+
+So  10 is stored in location so and so  2 5 is stored in location so and so  all right 
+
+Now  here incidentally all these are contiguous locations  but they may not be contiguous
+locations also  So  10 is stored in location  ‘a’ having the value 10 is stored in location so  and so like that it goes on 
+
+So  pointer declarations  when we declare some variable as a pointer  the typical  the standard
+form is this  Data type shown in red (that is very important) and this star - this is something new
+that you also saw when we were discussing call by reference  for example  int is a type star x y z x  what does it mean  It means that x is a pointer  which is enabled or which is allowed to point to variables of type integer  Only integers can be pointed to by x 
+
+So  similarly I could have said float star p   that means  p will be a pointer  that can only be
+pointing to floating point numbers  So  three things are specified in this disk in this declaration 
+
+One is that this star tells that the variable  pointer name or p whatever you call it  is a pointer
+variable  not a normal variable and asterisk is telling that it is a pointer variable  Pointer name is
+a variable therefore  it needs a memory location and pointer name points to a variable of the
+specified data type  So  these three things you must remember when you are handling with the
+pointer 
+
+So  here is an example int star count what does it mean  That means  count is a pointer variable 
+Why a pointer variable  Because this is preceded with the star and where can this pointer
+variable point to  To all data type data variables of type integer  Speed is again a pointer because it has got this asterisk and where can speed point to  Speed can point to variables of type float 
+Once a pointer variable has been declared  it can be made to point to a variable using an
+assignment statement like this - int star p x y z 
+
+So  int star p is a pointer variable  x y z is an integer  So  you see by the same declaration I have declared two things - one is a pointer to an integer and an integer  So  if I make such an
+assignment like p is assigned and x y z  So  x y z is here and its location can be 5000 and p is a
+pointer variable and so when I do this assignment  this might be in the location 7000  but when I
+do this what it does is it loads this 5000 here  So  now  p is pointing to x y z  I hope it is clear
+now 
+
+So  this is called pointer initialisation 
+
+The things to remember is the pointer variables must always point to an item of the same type 
+One pointer variable  either it points to an integer or it points to a float or it points to an array of
+characters whatever it is 
+
+Now so  here for example  this is an error  why it is this is an error  X is of type floating point  x
+is a variable and p is a pointer which is allowed to point to only integer  but here I have made an
+assignment where I am assigning to p  the address of the floating point number - that is not
+allowed 
+
+So  therefore  I am forcing p to point to x  but the type of p and the type of x are different  So 
+assigning an absolute address to a pointer is prohibited  You cannot do this  you cannot force a
+pointer to a constant value  that you must keep in mind 
+
+So  how do I access a variable through a pointer  Once a pointer has been assigned the address of a variable  the value of the variable can be accessed through the indirection operation  So  let us give an example first 
+
+For example  a b are two integers  Let us draw this I am sorry  suppose a is a location  b is
+another location  both of them are integers and p is a variable  which is allowed to point to
+
+integers and what I do  I assign to p the address of a  So  the address of ‘a’ let us say is 1000 or 100  So  100 is written here  So  it comes here 
+
+So  what did this statement do  100 was the address of a  that has been assigned to p  Now what is being done by this  B is being assigned star p  b is getting the content of wherever p is
+pointing  Suppose this was 50  then b is getting 50  So  little bit of confusion can occur because
+of these two star ps  Please understand that this star is just telling you that p is a pointer because it is coming in a declaration statement  On the other hand here it’s is not a declaration statement is an assignment statement  I have already declared p to be a pointer  So  p is a pointer 
+
+So  once a pointer has been assigned the address of a variable  that is done in this step the value of the variable can be accessed using the indirection operation  that means  which variable say I could have done p assigned b assigned a  Instead of doing that what I am saying is (just note my two English statements) one is the value of a is being assigned to b or b is being assigned the value of a this is statement number 1  statement number 2 is b is being assigned the value of the variable that is being pointed at by p  
+
+So  here one is b is assigned the value of a  one statement  Here that is this statement  And this
+statement is b is assigned the value (instead ‘of’ a  I am saying is being assigned the value) of the variable pointed by p 
+
+So  this is an indirect way of saying that  So  this is something that you must very clearly
+understand look at this once again 
+
+So  I can now say that this thing is equivalent to b assigned a  but I have done that in a indirect
+way 
+
+If you have understood this then pointer should be clear to you  here lets look at one example
+integer a b c assign 5 and p is a pointer to integers  Now  in this statement what has been done 
+
+‘a’ has being assigned 4 times c plus 5  So  c is being added to 5  So  it is becoming 10 and 4
+times 10 is 40  40 is being assigned to a  Here what is being done  P is being assigned  c is
+address  So  wherever c was let’s say address 1000  So  that is being assigned to a variable p  So  p is becoming 1000 
+
+Now  b what is b being assigned  b is being assigned 4 times star p plus 5  What is star p  Star p is nothing  but the variable c  it’s pointing to that and whatever was its value suppose it was 10  it was sorry it was 5  So  that value is being taken and 5 is being added to that  So  it becomes 10 times this  So  these two are essentially equivalent 
+
+So  here is another example  you have seen this example very similar to this that I am defining a
+pointer  p t r is a pointer  x is 10  you just think of what it should print  X is 10  p t r is the
+address of x and y is being assigned star p t r  what does this mean  P t r is pointing to 10 and y
+is being assigned to star p t r  that means  y is being assigned to 10 or rather I should say y is
+being assigned x and x was 10  So  y is become becoming 10 
+
+Now  if I print  instead of x what will be printed  Instead of x the  value of x will be printed 10 is
+stored in the address this  Similarly now what is this  ‘star and x’ - what does this mean  ‘and x’
+is the address of x and where that is pointing to - these two should be same 
+
+So  if you look at if you look at the result - this is equivalent why  ‘And x’ is the address of x
+and star just like star p  that means  the content of where the pointer is pointing to  So  these two are same right 
+
+So  ptr is ‘and x’  So  these two are all equivalent ok  If I say ‘and x’   that means  I am taking the
+address of star ptr 
+
+So  this is something you can play with yourself and you will get a printout like this  So  these
+two are the same 
+
+Now  here we are coming to something more which is known as pointer expressions and we will
+deal with that in the next lecture 
+
+So  we were discussing about pointers and we have seen that pointer is a variable  So  it is a
+variable  but a variable that points to some other variable  but naturally the question that can arise is since pointers are variables so  you should be able to do some sort of operations like arithmetic operations on them  So  the answer is yes we can do that and in today’s lecture we will look at exactly that - pointer expressions 
+
+Now  this concept of pointers is a very strong component of the c language and it is not the case
+that in all languages this pointer is there  but we are discussing pointers specifically  because it
+will give you a very good idea about what indirection is  We had mentioned about indirection
+right 
+
+So  for example  I am just before moving into the actual discussion  let me come to this that -
+what is an indirection  
+
+Somebody asks you the address of toms house  you can do two things - you can either give him
+the address of toms house or you can give him the address of johns house  So  that he goes to
+johns house and asks john to get the address of toms house  So  I do not know toms address  but I
+know john who knows toms address  This is indirection - one level of indirection 
+
+Another level of indirection could be that (second level of indirection)  You can go to ram and
+ram will know the address of john who knows the address of tom  So  that is second level of
+indirection  So  in our case we have got a particular variable p  let me just call this variable x 
+and that x has got some value  I am not saying that x has also got an address 
+
+But I am not saying what is the value of x  What is x  That is my question and instead of
+answering that  I am giving you a pointer to x and I am asking that ok I tell you I will give you
+the answer  go to p and find x right  So  then p must be assigned the address of x  So  I go to this  then I come to p and get the value of x as I want to have that in some other variable v  where I want to have star p 
+
+So  indirectly I could have done simply - v assigned x  These two are equivalent  that is what we
+discussed in the last class right  That is why it is an indirection that often comes in very handy 
+very useful  when we carry out many computations 
+
+So  like other variables pointer variables can also be used in expressions  If p 1 and p 2 are two
+pointers the following statements are valid - star p 1 plus star p 2  So  what is being meant by
+that  Suppose p 1 is pointing to something  where there is 50 and p 2 is pointing to something
+which is stored as 60 - then what is sum  Sum becomes 50 plus 60  star p 1 plus star p 2  50 plus 60 so  that should be 110 
+
+Next similarly  I can have this  But here it would be easier nicer to read  if I had put parentheses 
+So  that I had not confused about this Asterix and this Asterix  These have got completely
+different significances  this is a multiplication and this astrix is saying it is a content of a
+particular pointer 
+
+So  similarly the these two are equivalent of course  I have already shown that  Now this is also
+possible star p 1  So  in my earlier drawing p 1 was 50  50 plus 2 - that is coming over here 
+So whenever you are finding difficulty as I suggested just draw a simple diagram  p 1 is pointing
+to some other variable which has got the value 40 
+
+So  star p 1 is what  Star p 1 is that particular - variable x and plus 2 that is equivalent to x plus 2 which is 42  So  this one is being modified to 42 
+
+Similarly  I can do other operations like this where you must understand that this is actually just
+like another variable - an integer variable or whatever type of variable p1 is and it is simple  No
+other complications in that 
+
+Now  what are allowed in C  There are certain things are allowed in C and some things are not
+allowed in C  I can add an integer to a pointer  I can subtract an integer from a pointer  I can
+subtract one pointer from another and say if p 1 and p 2 are both pointers to the same array  then p 2 minus p 1 gives the number of elements between p 1 and p 2  For example  suppose here there is an array  So  p 1 is pointing here and p 2 is pointing here  Then the number of elements p 2 minus p 1 will be just the subtraction of these addresses 
+
+Suppose this was 500  501 (if it is a character) 502  503  So  I have got three elements in between
+right  So  these are all allowed  I can subtract an integer from a pointer  I can add an integer to a
+pointer  So  if I add an integer to a pointer that is p 1  p 1 plus 1  So  that means it will point to
+this point  this element  What are not allowed  The things that are not allowed are you cannot
+add two pointers 
+
+The reason is obvious - p 1 is a pointer and p 2 is a pointer  Now these two are two different
+locations  So  say p 1 is in location 7000 pointing to some variable  and p 2 is in location 10 000
+pointing to some other variable 
+
+So  what does p 1 plus p 2 mean  7 000 plus 10 000 - 17 000 that does not mean anything  That can be a point to some garbage value or something else  So  that is not allowed  Compiler will hold you for that  multiply or divide a pointer in an expression  that is also not allowed  You
+cannot multiply  you can just add an integer  subtract an integer or subtract one pointer from
+another  these three you can do 
+
+Here is something which is known as a scale factor  let us see whether you understand this or
+not  We have seen that an integer value can be added or subtracted 
+
+So  here let us look at this  p 1 and p 2 are two pointers of type integer  I mean when p 1 is
+pointing to an integer  p 2 is also pointing to an integer all right  Now i j are two integer
+variables  p 1 is p 1 plus 1 so that means what  p 1 was pointing somewhere  but I am just adding some constant to that  So  here is a memory location and say p 1 is pointing to this and suppose it is an integer so  this is pointing to an integer  Now p 1 plus one means this will point to the next integer 
+
+Now  I am not saying that if an integer takes two bytes each of them are of two bytes  So  it just
+comes to the next integer  That is why the type is important  Depending on the type it is updating either by 2 or by 1  but p 1 plus 1 means I am going to the next  p 2 is assigned  p 1 plus j where j can be something 
+
+So  p 2 was pointing somewhere here  I am upgrading that with the j value  going to the j th next 
+Similarly p 2 plus plus  p 2 assigned any arithmetic operation I can do all right 
+
+In reality it is not the integer value which is added or subtracted  but rather the scale factor times
+the value - that is one times the size of the integer if it were  So  it is j times the size of an
+integer  2 bytes  4 bytes - that is what that is why it is called the scale factor  So  this is not this 1  but one next  two next  here j th next  it is like that 
+
+So  for character the scale factor is 1  integer is 4  if 4 bytes take one integer  float 4  Now this
+could be 2 - that depends on what the scale factor is  So  if I write here for an integer pointer 
+assuming the my computer is actually doing this - that each of them is 4  then p 1 plus plus is
+adding p 1 by 4 so it is going to the next integer 
+
+Now  in between there are 4 bytes  So  I am going to the next integer 
+
+So  there is one quick way of finding out  how we can find out what is the representation in my
+system  There is a nice inbuilt function called size of  So  if I give size of int  the system returns
+me the value 4 or 2 depending on how much  how many bytes does int consume 
+
+Similarly  I could have given size of float - that will tell me how many bytes has a float
+consumed so and so forth  So  that is one way to find the scale factors  So  number of bytes
+occupied by float is size of float  If you give that the system will give you the number of bytes
+required for that representation 
+
+So  if in a system you would run this and you find that it is float is 4  int is 4 then you know what
+my scale factor is 
+
+Now  just like and for every case we are thinking of how do we pass an array to a function  how
+do we pass a structure to a function  here again we look at how do we pass a pointer to a
+function  Pointers are often passed as parameters to a function and if you have thought about it
+you must have already discovered  Now  always it allows the data items  within the calling
+programs to be accessed by the function  altered and then returned to the calling function in the
+altered form  this says the calling by reference 
+
+Normally arguments are passed to a function by value  we had discussed this  Now this is called
+as call by reference or call by address  now you can see this - how this is done  Because in call
+by value we have seen that in the swap function for example  it was swapped within the function  but that x y and the main functions x y were two different entities  therefore whatever change was there that was lost 
+
+But if I had just passed on the pointer then whatever change I do in the pointer in that particular
+location  I simply pass on the address and make a change over there  then the change is reflected because it is the same location that is known as call by reference 
+
+Now  here is an example  you have seen this passing by value  I am repeating this - a was 5 and b was 20  I call swap a b  Here  what happened   x was 5  b was 20  I changed it  Now x was 20 and b was 5  but when I returned and printed this a and b they were completely different  So  swapping was not reflected  Therefore  here x and y was swapped but a and b do not swap  So  the output will be the same 5 and 20 
+
+But if I had done through reference  here you see how I pass it on  Here what I am passing you
+have must have thought about it  Swap instead of sending that value  what I am sending is the
+address of that  address of a and address of and here inside the function  what I am a what am I
+accepting  I am accepting the pointer 
+
+So  here (x and y) I know that what is coming to me is a pointer  We discussed it earlier also  but
+let me repeat because there is a very fundamental idea  a is 5  b is 20 and now I swap  So  here do I have x  No  I have got this x which is nothing  but ‘and a’ and I have got this y which is
+nothing  but ‘and b’  So  therefore  they are pointing to these points 
+
+Now  when I swap  I am actually swapping the content of x  So  the content of x   that means 
+here that is going to t and then content of y  indirection  I go from here  follow my cursor  I go
+here and that one is going as the content of a  content of x  So  here it is becoming 20 and then t is coming as a content of y  What is y  y is here  So  this is coming as 5 
+
+So  when I come out and print here - a and b as you can see has changed  So  you see how did I pass on the parameter  Look at this - I have passed on the address and I have accepted them in my function as the pointer 
+
+So  with this we will get the correct answer x and y swap a and b also swap  So  the answer is -
+that is correct one as we expected  So  now let us skip this a little bit and let us go to something
+else as pointers and arrays 
+
+When an array is declared  the compiler allocates a base address and sufficient amount of
+storage  You know that when I declare something as an array  int a 10 and if I say that int I have
+discovered using size of fact that int takes 4 bytes  then for every element 4 bytes are kept and 40 such locations are allocated for the array a 
+
+Now when I refer to this array a  because we saw that we pass on an array by reference to a
+function the reason behind that is that this name array a is the same as a pointer to the first
+location of the array  So  it is as if equivalent to a is a pointer that is pointing to the first location
+of this array a They are equivalent 
+
+So  the base address is a location of the first element of the array  the compiler also defines the
+array name as a constant pointer to the first  When I declared it with the compiler it also keeps a
+constant pointer  that pointer you cannot change ok 
+
+ 
+
+For example  when I say x 5  1  2  3  4  5 then suppose the base address is 2500  each integer
+requires 4 bytes  then the elements will be x 0 will be 2500  x 1 will be 2504 so and so forth and
+the pointer will be 2500 
+
+If we go up 2500  So  there is a pointer x - which means ‘and address of x 0’  which is 2500  
+
+So  p assigned x and p assigned ‘and of x 0  are equivalent  So  we can access successive values of x by using p plus plus or p minus minus to move from one element to another 
+
+So  I have got the p  I have got this pointer which is pointing to the array  I cannot change that
+pointer  but if I do p plus plus - this pointing to the first element  then I go to the next element of
+the array record by the scale factor  So  this is if I do p plus plus I am actually doing p plus 4  In
+that way I can move across 
+
+So  the relationships should be clear here  So  p plus 1 is the next one  p plus 2 is the next one -
+that we have already explained 
+
+So  here is a function to find average  here you see we have got a main program  where I have
+got an array 100 elements  for k 0 to n  I am reading k and then I am calling this average x  I am
+calling average x n  Now  here what goes in average x n  you have seen this  now I am passing
+the pointer  When I am saying I am just passing the array actually I have passed on the pointer 
+So  whatever I did I am doing here  I am taking another star p  which is local which is pointing to
+the array 
+
+So  my array was here and I am putting another pointer p which is pointing to this array and
+array means what  Array means the first location of the array  Then I carry on the sum here  I
+carry on with p  Here you see what I do  I take p and then I change p  Sum assigns star p plus i 
+So  p plus 1  p plus 2  p plus3 and star p plus 1  p plus 2 means the content of this  these contents 
+
+So  here in this way I am getting the sum and what do I return  Return float sum by size  So  I
+get sum  obviously  the array was integer  but now this is something called typecasting- although
+it was float  I put it in a bracket  That means  whatever is coming here I am converting that to
+float  Sum will be an array  sum of all integers will be an integer  but when I divide by that 
+although I did not declare ‘sum’ to be ah a floating point number  just by this sort of type
+typecasting 
+
+I can make it a floating point number and then how do I return it  Yes you might have guessed
+correctly  that I do not need to return it because whatever I have done  here when I passed an
+
+array  whatever was done that is being done here and what I am returning  I am returning this to
+the average  So  I will get this value all right  So  this should be clear 
+
+So  its clarified  Now next thing that I will be discussing a little bit is dynamic memory
+allocation  I will take little time to explain that and that is a very important concept and after that
+we will move to a some discussions  basic discussions on file 
+
+We have seen how structures are represented  we have also learnt about pointers 
+
+So  today we will be looking at the structures once again in a different light  As you can see here  a structure can be declared as is shown here the student structure struct stud is consisting of three members or three fields 
+
+So  they are - the role  the department code which is a character array and cgpa which is a
+floating point number and a b c are three variables of the type s t u d  stud  The individual
+structure elements you now can be accessed by a dot role  So  a is this field or b dot role c dot c g p a  So  with this dot operator we can access them  This was known to us right 
+
+Now  we can also we have seen that  we can define an array of structures where class is an array of students  class size is 100 and each element is a structure of type stud  The structure elements of the individual records can be accessed with this dot operator like class i  any particular element of that  say for example  here  So  this is class i where i is this index  I come over here  and get a particular field of this  So  this has got a number of fields  So  I am coming to the role field or the department code field dot the cgpa field  This was also known to us 
+
+So  here we are trying to apply that to an example sorting by roll numbers  So  here we have got
+a set of students  look at the declaration here  Struct stud is the structure  having role department code and cgpa  Now  in the main function what are you doing  We are defining struct student class 100  Now  struct start has been declared  it has been declared globally  even before main that is possible 
+
+Here I am saying that class 100 is one array and t and there are some integers  ’t’ is again a
+structure  t is also a structure of type stud  Now  I am reading the number of students  how many
+students are there in the class  The array can accommodate at most 100 but I am reading the
+value n  Now  for each of the elements  (look at this is our familiar for loop here) for k 0 to less
+n  I am scanning the class  the roll number of that particular student  the department code and the c g p 
+
+So  in that way I read here  I am reading the array all right  The array is being read here at this
+point right  Now what I am doing now  Next let us look at this loop  What are you doing here 
+For some value of j  if the role of that student  so  here I have got my array  I am coming to j  a
+particular element and looking at the role number field  if that is greater than some other value k 
+if it is greater than the roll value of k  then I am exchanging them  just as we sort 
+
+Now  what are we sorting here in that example earlier that we had done  we are sorting integers
+or sorting real numbers  Here what we are doing we are sorting the entire structure  as you can
+see the j is coming to t 
+
+So  t is again a structure  k is coming to j and so  this is a swap operation  swapping structures  It is called swapping the structures and this I am doing for k which is a internal variable and j is the
+external variable  So  my diagram should be a little different 
+
+So  for every j I am looking at one j and I am varying k from here  This is k  k is varying from
+this point to this point to the end of the structure and comparing with this j value  If this is any
+element that is less that is coming over here and it is being swapped  So  you have seen this swap algorithm earlier 
+
+So  that is being swapped here and then I update j and I go on doing this  So  this is how I can
+apply the sorting algorithm that we had learnt  for sorting student records all right 
+
+Next the other thing that we have to look at is pointers and structures  How they can be
+intermingled  You may recall that the name of an array stands for the zeroth element of the
+array  So  if this is an array of the name a  then the name a and a 0 are synonymous and so  a can be considered to be a pointer that is pointing to a 0 all right 
+
+Now  consider the declaration  This is also true for the names of arrays of structures  So  if I have a declaration like this  you look at the declaration yourself  So  you can see student is a structure and I have declared of the type student and array class 100 and star p t r 
+
+Now  what is star ptr  What does it mean  You know by now  Just as we had done this (keep it
+side by side ) int star p what does it mean  It means that p is a pointer that points to integer data type  Here it means that ptr is a pointer that points to stud type of structures  So  now  what do I have 
+
+I have got an array called class  each element of which is of type student structure and I have got a pointer ptr  which can point to such structures  It can point to such structures -any of these I have not yet initialised this 
+
+The name class therefore  represents the address of the zeroth element of the structure array  So  if I have this then this class means it is a pointer that is pointing to this element plus 0  Just like an array and ptr is a pointer to the data objects of type struct  that we have seen 
+
+The assignment - class assigned to ptr what will it make  It will make ptr to point to the first
+element of the array  Here is class and ptr is now pointing  (when I do this assignment note that
+they are of the same type) to this element 
+
+So  it will assign ptr to class 0  understood  When the pointer ptr is incremented by 1  that is ptr
+plus plus you should be able to tell me what will happen  The ptr will be incremented to the next
+element of the array  So  the actual increment will be by a scale factor and what is that scale
+factor  That scale factor is size of stud  size of the structure stud and you know that it has got a
+roll number  it has got c g p a 
+
+So  depending on the different data types that are housed is inside that structure it will vary  So 
+the value of ptr will point to the next element which will be incremented by size of stud 
+
+So  its permit to point to the next record  Once ptr points to a structure variable  now this is
+something new  the pointers can be accessed as ptr role  that is possible  So  let us see what is
+happening you are being introduced to this operator  the arrow operator 
+
+So  here or this only comes if the left side of this operator is a pointer  So  if suppose I have got
+some structure and pointer p or ptr is pointing to this structure and it has got different fields say
+cgpa is a field  If I write ptr arrow c g p a  that means that I am now pointing to this  I am
+actually accessing this element of the structure 
+
+Just as suppose this structure is class and this element is class 1 say  I could have written class 1 dot cgpa and here I have already done this   the pointer ptr was assigned to class 0 and then I did ptr plus plus  that means  now where is ptr pointing to  ptr is pointing to class 1  So  I can now also do ptr arrow cgpa  These two are equivalent  this and this are equivalent 
+
+So  here also you can understand this  So  let us move ahead 
+
+Similarly  I can go to another field by ptr slash department code  I can go ptr cgpa  ptr roll  this
+symbol is naturally called the arrow operator 
+
+You can read this type def  now here I am defining a type  the name of the type is complex and
+what is this type complex  It is a structure with a real and imaginary part  this is what we saw
+earlier 
+
+Next I have got a function - print complex star   what does it mean  A is a pointer to type
+complex  So  print f  whatever there are two placeholders - a real  a imaginary  So  why is it
+possible  ‘a’ is a pointer  So  it is pointing to some complex number  whatever that is  ‘a’ is a
+pointer pointing to that and I am going to the real part  I am printing a real and this part is a
+imaginary  So  this is what is being done by this piece of function code 
+
+So  now swap reference  I have got complex a and complex b  I am sorry it is not visible here  a
+and b there are two pointers in complex  So  there is t m p  I take another structure named t m p
+of type complex  and I swap the pointers here 
+
+That is why you can you can work it out that  that means  that ‘a’ was pointing to some structure
+and that ‘a’ is pointing to this structure and this particular structure is copied to another structure
+temp  then ‘b’ was pointing to another structure b and a are swapped  So  now  ‘b’ is pointing to
+this and ‘a’ is pointing this next I am making b point to this  So  that is how a swap operation can
+be done and how we passed on the parameter to this 
+
+So  the main program can be can define complex x  10 and 3  y is minus 20 minus 10 because of
+the resolution it is not visible  So  print x and y then swap reference print x and y  Now  can you
+guess and tell me whether the swapping will work in this case or not   The answer is yes it will
+work because it is a call by reference  So  whatever I am swapping here  that will be reflected in
+the main program also  So  here is an example  So  let us move ahead 
+
+Now  one warning is there that  when using a structure pointers  we should take care of the
+operator precedence  Because here we have seen the star symbol as well as dot symbol  now this dot has a higher precedence than star  what does it mean 
+
+It means that if I have got something like ptr roll and star ptr dot roll the dot will have a higher
+precedence  So  these two are the same thing - ptr roll (ptr is a pointer and the roll is that
+particular field) and star ptr is what  Star ptr is the particular structure  and I am going to the roll
+field of that structure 
+
+But if I had done this that would be an error why  That would be an error because this dot
+operator has got higher precedence than this star operator  So  basically I will try to get the role
+filled from the pointer p t r  but that is not the case  there is no roll field inside the pointer p t r 
+The roll field is there in the content of the pointer ptr that is star p t r 
+
+So  I must make first star ptr within bracket then dot roll  So  this is correct  but this is wrong the
+and the operator arrow enjoys the highest priority among operators among all these operators it
+has got the highest priority 
+
+So  here in this case what will happen  plus plus ptr arrow roll - as we have said that this has got the highest priority  we will go to where the ptr is and go to the roll field of that and after that we will increment this plus plus  although it is shown as a pre increment  So  that will not have
+higher precedence than the arrow operator 
+
+So  if I want to first increment the ptr and then get the roll  then I should do plus plus ptr arrow
+roll which will do the intended thing  I hope this is clear this part 
+
+Now  structures and functions  Structures can be passed as argument to a function and a function that we have already seen  A function can also return a structure  So  we have seen that using two complex numbers how we can do that 
+
+So  here again we look at that example that we have got a complex structure with two fields  I
+have now changed the names - float r e and float i m  and in the main function I am scanning
+
+and a dot r e  real part of a  imaginary part of a  then real part of b then imaginary part of b and
+then I call the function add a b  What is happening here when I call this add a b  What am I
+passing I am passing a b and here x y 
+
+So  it is a call by value  So  here this is copied  now i have struct complex x y (there is no
+problem here it is not like swap I just want to add)  So  I have got two internal variables x and y
+and t  that new structure t is taking x’s real part and y’s real part  then I am getting the real part
+of t and in the imaginary part of t there is nothing here  There is an excess space  In the
+imaginary part of t  I take the imaginary part of x and the imaginary part of y  then I am returning
+this t to c  where c is also of type complex since the types are matching  I can pass it on over
+there 
+
+Now  this is one way of adding the complex numbers  Now if this is clear  now let us look at an
+alternative way of using the pointers 
+
+Here I just changed this  other things are the same  What I am doing here is I have called them 
+passing the address  now I am passing the pointers  In the earlier case I was passing the value
+here and now I am passing the pointers  I am passing address of a  address of b and address of c 
+
+Now  inside this add function  what am I doing  I am taking x and y  So  these are pointers  I am
+taking them and t  t is real 
+
+So  t is a pointer that is pointing to another structure of the type complex and t is r e  t arrow r e
+means a real field of this t  will be taking the real part of x and real part of y  So  here x plus y 
+the sum will come  this the real part of x and real part of y will come here  and here the
+imaginary part of x and y will be added 
+
+Now  when here I am not returning any t  because this t is nothing  but this c  So  this t and c are
+mapped  it is a call by reference  So  c is also actually pointing over here  So  I get the result
+here  So  this is another way in which in structures  we can use pointers also  So  these are
+relatively more advanced aspects and you will gradually practice this and we will get familiar 
+
+Thank you 
+
+We have looked at pointers and structures in detail and we have also seen how structures can
+also utilise pointers or in other words how pointers can be used in conjunction with structures 
+Now  we look at another very interesting use of pointers  but in general let me say that it is a very fundamental concept  from the memory allocation point of view 
+
+Dynamic memory allocation is what we will be discussing now  Now  what if there is a dynamic
+memory allocation then  obviously  there must be something called the static memory allocation
+now what is static memory allocation 
+
+When we declare an array say int A 20  you know that the compiler will allocate 20 locations  20
+locations to house 20 integers to you and that will be named as A or you can also consider that
+there is a pointer A  which is pointing to the first element of the array  But you have got space for
+20 locations  20 integers allocated to you 
+
+So  now  you know size of  So  how many bytes will be required  You can say 20 times size of
+int  So  size of int will return you how many bytes your particular system allocates for an integer
+and 20 such allocation  So  so many bytes will be allocated to you  Now when that is statically
+allocated that is allocated at compile time  so  when we say static allocation that means 
+allocation at compile time right 
+
+Now  if for some reason you need more than 20 integers to be stored in this array A   you will
+need to redefine this whole thing or in some cases we do not know  we do not have an idea of
+how many date data items will come for example  you was you are actually storing student
+records in an array class  and you do not know how many students will join that class
+beforehand 
+
+If you know that beforehand its fine or if you have an idea that what is the maximum number of
+students that can come  then its fine you can allocate it in the form of static allocation as we do in an array 
+
+However  when we do not know and the information comes at a runtime  that means  when is
+being executed  that will lead to what we call dynamic allocation of memory  So  let us look at
+how we can handle it 
+
+So  the basic idea is I have already explained that we have an amount of data we cannot predict
+beforehand  So  we will use effectively whose dynamic memory allocation technique to do that 
+
+Now  C language requires a number of elements to be specified in compiled time  when we
+define in an array we need to specify that in compile time  Now  often that leads to wastage of
+memory or program failure  Why a program failure  Program failure will occur because if we
+exceed the amount of space that has been allocated  there will be a failure the program will give
+an error or it will exit abnormally  However  if we take recourse to dynamic memory allocation 
+we can solve this problem how  Memory space required can be specified at the time of execution
+how can we do that  how can I specify the amount of memory required at the time of execution 
+
+If while running the program  just like the instructions and operators  if we had some special
+means  some special command  some special operator by which we can grab memory then it’s
+possible  Now here you should understand that who allocates memory to us  It is the operating
+system which allocates the memory to us 
+
+So  this like the print f  scan f all those things are system calls  We are making calls to the
+operating system  which is doing the required thing for us  Similarly there is a function called
+Malloc - Memory Allocated  malloc using which we can grab memory from the operating system
+how let us look at this 
+
+In memory in C  I have got different types of variables that is not so  much relevant right now 
+What is needed is this part  These global variables and instructions are there always specified 
+
+The local variables are there and there is some free memory  We can take from this free memory and use them as our local variables  The free region is has got a name heap 
+
+Now  the most important thing is that we need some functions  which will give my program
+some memory addresses or memory blocks from the operating system storage of memory  which is known as heap from there it will be allocated to my program all right 
+
+So  for that we have got four different functions - one is malloc  what does malloc do  Malloc
+allocates the requested number of bytes and returns a pointer to the first byte of the allocated
+space  So  what it does is something like this  what is happening  (Refer Time: 08:31)  Malloc
+allocates a requested number of bytes and returns a pointer to the first byte of the allocated space 
+So  let us try to explain this 
+
+So  when I do malloc  it is just like a function and it will return some memory bytes   some
+memory bytes  How many memory bytes  It will depend on  what I am requesting for  It is a
+requested number of bytes  So  malloc will have some parameters which will show later 
+
+So  it will give some give me some amount of memory  Now  the operating system has got some
+free memory spread here and there  So  from there it is giving me some piece of memory  but
+
+how do I know where is that piece of memory  For that  it is returning me a pointer say pointer p
+which is telling me that if you follow this pointer  you will get this piece of memory location 
+So  let us proceed a little bit 
+
+Now  similarly when this memory block is given in response to malloc request  the actual
+memory is not initialised to some value  It can have any garbage value  But if I apply calloc 
+then it allocates space for the array of elements and initialises them to zero and returns a pointer  So  in this case if I want to have a chunk of memory where everything has been initialised to zero then I should use calloc  On the other hand the free function call will return this amount of
+memory  that was given to me in request to malloc  will be returned back to the heap  returned
+back to the operating system so  that it can be utilised by somebody else in future all right 
+
+So realloc modifies the size of the previously allocated space  So  I have got some allocation and then I think that allocation is not enough  I want to change it  I can use realloc  However  we will be mostly concerned with malloc and free in our discussion 
+
+So  a block of memory can be allocated using the function malloc and it reserves a block of
+memory and returns a pointer of type void  You know every pointer has got some type  but in
+this case with malloc returns some memory block  the pointer that it has returned is of type void 
+but then we have to do something  What we need to do  I know why I needed this memory  So 
+accordingly I will have to do that typecasting  So  once it returns me of type void  but that return
+pointer can be assigned to any pointer type  So  here you see 
+
+So  here please note  malloc has got a parameter of byte size - how much memory I want  the
+amount of bytes which is required  Now this malloc has returned me up to this  it has returned
+me a pointer and pointer is of type void  but suppose if this amount of memory I want for the
+purpose of storing integer array then this type will be int star  that means  I am casting this  What is malloc returning  Malloc is returning a pointer  some pointer  but that pointer was of type void  Now when I am typecasting it to int star  then this void is no longer it’s type  it is becoming of type int and then I am assigning it to another variable p t r 
+
+So  think of two things  first of all you have to decide on how many bytes you want  Accordingly
+you do malloc and then what type of data you want to store there  So  accordingly you do this
+typecasting like int star  float star  char star whatever you do and then you assign it to a particular
+pointer  Let us see how it will work  So  let us look an example   
+
+Here  how do I know how many bytes I need  Suppose I need to store an element an array of 100 integers  So  what I do here is I ask for malloc 100 times size of int  size of int if it is 4  if int is 4 then I am getting 400 bytes 
+
+Now  these 400 bytes that have been given to me is being pointed by some pointer of type void 
+So  next I make it int star and put it to p  So  p is now an integer pointer that is pointing to this
+entire block of 400 integers 
+
+So  a memory space equivalent to 100 times the size  we have got  So  here 400 bytes of space
+and p is a pointer pointing to the beginning of this  So  I have got this just using malloc  it was
+not declared beforehand 
+
+Now so  this 100 can also be a variable n  if I read a particular variable n now how many students
+are there  scan f m and n  So  I read the number of students  then I can multiply that with n as
+well 
+
+Next  you see here I am seeking memory for 20 characters  I do malloc 20 because I know a
+character takes one byte and then the pointer is of type void I am typecasting it to type character char star and assigning it to c p t r  Now it is actually wrong  it is allocating 20 bytes of space for the pointer 
+
+So  integer character was simple  now I want to have for space for the entire structure students 
+now that size is larger  So  I do not know  So  I just have employ this function size of struct stud 
+So  I gets how many bytes  Say it requires say 40 bytes and say 10 such for 10 such students or n such students  I multiply with that I get so  much memory  now I have to typecast that to struct stud star and that goes as a structure pointer 
+
+Now  malloc always allocates a block of contiguous bytes  Now suppose you are asking for 100
+bytes and 100 bytes are not available then malloc will not be able to allocate you the space  in
+that case malloc will return in null  That is a null pointer  that is a special character special value
+it will return  that shows that I could not allocate a space 
+
+So  I could not allocate it to you a valid pointer  So  it is a null pointer meaning thereby I failed
+in allocating your memory 
+
+So  here is an example  Here let us look at it from one side - I n   float is a pointer  height is a
+pointer of type float  sum is 0 and average  So  what am I trying to do  Probably I am trying to
+find the average height of the class  So  input the number of students and I am reading
+ampersand  So  this one is ampersand n  So  this is n number of students 
+
+Now  see I did not know how many students are there  So  I am getting this number of students
+here  I am getting n number of students here  Now I want to have an amount of spaces for the
+height  So  what I am doing  I am allocating n number of spaces  n is a variable here and size of float  whatever size of float is 4 bytes  So  n times 4 bytes  so much space is being allocated  and the pointer is height is a pointer of type float 
+
+So  this pointer is being type casted to float  Then I get the input scan f in a loop  I am getting the heights one after another in an array and I am finding the sum of the heights  finding the average of the heights  where I am dividing sum which is a floating point number with float n  Here is
+another example of typecasting  So  you see I am dividing by n  but this is a floating point real
+number  n was an integer  So  I convert it to float and convert it divided 
+
+So  this is how malloc works now  So  we have explained that 
+
+Similarly the general format for freeing space is using by using the free function  So  general
+now suppose I have got a space allocated to me and that space  the only handle to that space is to the pointer p 
+
+So  I free that pointer  I free p  So  the pointer is freed  that means  this pointer is freed means
+this location  this amount of memory goes back to the storage of the operating system and that is the heap 
+
+So  whatever we got in malloc that gives us some idea about how we can get space and reallocate
+space 
+
+Now  briefly we I will be talking for the next 5 or 10 minutes on file handling  there is not much
+to understand about file handling thus you will learn as you do  Now  what is a file   That is
+
+something you have to understand  File is something where I want to write something write or
+read from 
+
+So  I want to store something  I will take a particular file all right  and I will open that file and
+then I will write in the into that file then close that file and then in that way I may have 10 files 
+
+Now  at a particular point of time I want to read a particular thing  So  I choose the particular file
+what do I do next  Open the file and read the file  Now  some files may be allowed to be read by
+others  some files can only be written in to and not read from  some files can have the option of
+read or write both 
+
+So  file is some space where I will be writing or reading from some storage 
+
+So  this is there in the secondary memory and till now whatever variables we are talking about 
+those who are all in the primary memory  So  if I store it in a file it goes into the secondary
+memory  So  let us have a little idea of how files are handled 
+
+So  now again now we have learnt pointers  So  any file can be accessed using a pointer  Just as if I have the file of income tax  So  I will have a pointer that there is the file of income tax  here there is some file of road tax it will be here some file of your salary  it will be somewhere here  some file of your expenses it will be somewhere else 
+
+So  there will be pointers  So  we use in c  the file star  We use file star to represent pointed to a
+file and if open is the command for opening a file  If a file cannot be opened then it will return a
+null just as in the case of malloc  we saw if nothing could be returned it was returning a null 
+
+So  here for example  you see f p t r is a pointer of type file  That means  f p t r will be pointing
+to file  Now  I have got a character file name whic is an array  file 2 dot dat it is a data file  So 
+fptr is f open file name and here when I do f open  I give the file name as well as the mode in
+which it can be opened and this w means it is in the right mode  So  what have I done here  I
+have called f open 
+
+So  I am trying to open the file  So  this f open will return up file pointer  Now if this file pointer
+is null  that means  there was some error in file creation otherwise it will go on doing something 
+
+So  quickly let us look at this  when I do f open it will open a file and will open it in a particular
+mode  read or write whatever I specify and it will return me a pointer  If a file is created
+successfully  it will return me a non null pointer 
+
+The second argument of f open is the mode and there are three modes  R means the file is opened for reading  w means it creates a file for writing and writes over all the previous contents  So  if I open it in the write mode  whatever content was in that file is erased  And a opens a file for appending  that means  whatever is there after that it will be added 
+
+So  if you have got something already stored and you do not want to destroy that and you want to add something more to that you will open it in mode a and rb reads a binary file  raw bytes we
+need not bother about that 
+
+There is a function called exit which you have seen  sometimes in the emergency we can put exit minus one  that means  it tells that I have exited the function without success 
+
+Now  here you see use of exit  file f pointer  character file name is an array  file 2 dot dat  I tried
+to do something  So  the file pointer was null 
+
+So  if it is null then what can I do  I will have to exit because of some reason the file could not
+be created 
+
+So  f open we have seen  f print is a very important command  f print works just like print f and s
+print f  except that the first argument is a file pointer  So  we will see how it works  So  fptr is
+again the file pointer and I have opened the file dot dat in the right mode  Now  print f means
+now I am printing  Where am I printing  A file called file dot dat has been opened 
+
+The name of the file is file dot dat and how do I identify it  I identify it with the fptr  the file
+pointer ok  So  it opened in the write mode  So  everything  whatever was there has been erased 
+So  I am writing  just as you have done print f then automatically by default it goes to the screen 
+here it is not default here I have said fptr 
+
+So  whatever I write hello world  it will be written in this file not in the screen 
+
+Screen is another file  but that is a default file  Reading a data similarly  we printed using f print
+f  reading we can do using f scan f  forget about that part look at this  fptr - I am reading from not
+from the keyboard now  I am reading x and y two integers from a file which is pointed out by f p
+t r and what is that file f p t r  I have opened the file input dot dat 
+
+So  you see in that file input dot dat 20 and 30 was written and so  f scan f I have read that  that
+was input dot dat  I have opened that in the read mode and I am reading from there  So  I am
+getting x to be 20 and y to be 30  not from the keyboard  but from the file 
+
+So now here are some powerful commands  We can read a string using fgets  from a file I can
+read a string  So  here you see a file is f p t r and a line is of size 1000  while f gets line is not
+null  that means  I am getting from f p t r  a value and if it is not null  that means  it is not the end
+of the line  the file is open  I am reading the line using f gets  I am getting the line  f gets takes
+three arguments  what are the three arguments its taking  A string  a maximum number of
+characters  1000 and a pointer from it returns  If there is an error at the end of file it shows EOF
+which is the end of file 
+
+Now  this I think you can understand much better when you use yourself  now when we open a
+file after that we must close that file we can simply use a command f close and the file pointer 
+So  here you see f p t r  I opened the file in the right mode  I have written hello world over here  f
+print f means saying I am printing in the file  and then f close  I am closing the file by f close f p t
+r all right  So  here it is opening and here is access and here it’s closing 
+
+You have seen that s t d in  s t d out  were two special cases of files  which are default files and s t d error which was the printing of the error 
+
+So  here is an example program you can see that  Main  f print f s t d out give value of i  that
+means  where am I printing this  Here I am printing it to the standard output  I am reading I from
+the standard input  Now  f print f I am writing that the value of i is whatever value of i read  So
+there is no error   So  give value of i  it will first give value of i  you give 15  then f print f that i 
+then it will say value of i is equal to 15 and there are no error  but an example to show error
+message 
+
+If there is an error for example I am being returned a null pointer in that case I can use output s t
+d error and say the file failed to open the file that sort of message 
+
+So  now another thing I will just talk about here  that will come in very handy to you that is say
+for example  you must be running the programs and you after you compile the program and link
+them you are creating an executable file  which is a dot out ( dot slash a dot out)  Now usually
+what do you do  You have got the dollar  those of you using Linux shell  a dot out right and
+return 
+
+Now  this dot slash a dot out what is it expecting  The input from the keyboard s t d in and the
+output is going to std out  but I do not want that  I want that I have got a file where my input data
+is there 
+
+I call that in dot dat and I have got another file which is known as out dot dat  I want that the
+input to be taken from this 
+
+So  I want a dot out to read the data from here and the result should be written here  I can do that in the unix environment very simply by this redirection operation  You see  a dot out will run
+taking data from in dot dat and sending the output data to out dot dat 
+
+So  say for example  in dot dat has got 15  So  I do that and the program runs and says give the
+value of i (think of the earlier example  earlier program) and it reads from here and it prints the
+value of i to be15  So  this whole thing is coming in out dot i 
+
+So  let us once again look at this thing  Here I am asking  them to give the value of i which is
+being given and that is being scanned from the input file and this is being written on the output
+file  So  in the output file both these things are being written  consequently  you see  what I am
+getting is this output - out dot dat and in dot dat  there are two files 
+
+So  this in this way you can use files for storing data you have to open the file  let me summarise a little bit  you will have to open the file  in the read mode  read the data from that file  do the operation  open another file in the write mode and write the data into that file  Thereby  whenever you require some file operations  you can easily do that and this is one example that we have shown which is very common during running your programs  If you store some data in a particular file and read from there and write into another file you can utilise this sort of structures
+this sort of commands 
+
+So  thank you very much  I think you have got an overall idea of how to write c programs and
+solve problems using programs because our the essence of our course was to solve problems
+through c programming 
+
+So  you should choose different problems and you should try to write programs for solving those
+problems  So  first you have to find out the proper algorithm  and then write the C code for that 
+you have learnt everything about basic things about the C programming  I have not touched upon some special features  which you can also learn from the book like static variables and all those I have left out intentionally 
+
+So  that you are not overloaded  you can solve it  the more you run the programs using the basic concepts that has been taught  you will be a good programmer and most importantly you will be able to think logically like a programmer  you will be able to think of an algorithm  and you will
+be able to translate that into a program 
+
+Thank you very much 
+
